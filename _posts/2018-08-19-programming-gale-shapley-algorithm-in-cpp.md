@@ -3,6 +3,7 @@ layout: post
 title: "Programming Gale-Shapley Algorithm in C++"
 description: Programming Gale-Shapley Algorithm in C++ for stable marriage problem.
 date: 2018-08-19
+categories: post
 ---
 
 <h3>Introduction</h3>

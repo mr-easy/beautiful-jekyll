@@ -245,6 +245,7 @@ prose:
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
 
+
 plugins:
   - jekyll-paginate
   - jekyll-sitemap

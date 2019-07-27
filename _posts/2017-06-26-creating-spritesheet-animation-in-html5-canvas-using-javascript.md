@@ -3,6 +3,7 @@ layout: post
 title: "Creating Spritesheet Animation in HTML5 canvas using Javascript"
 description: Tutorial on how to create sprite sheet animations in HTML5 canvas using Javascript
 date: 2017-06-26
+categories: post
 ---
 
 <h3>Introduction</h3>
