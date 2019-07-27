@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: Mr Easy
+title: Mr. Easy
 
 # Short description of your site
 description: Personal website and blog of Rishabh Gupta(mr easy)
@@ -11,7 +11,7 @@ description: Personal website and blog of Rishabh Gupta(mr easy)
 # *** If you're not sure what this mean, then leave this section as it is. Only modify the url and baseurl if you know what you're doing!***
 
 # url is the the website domain URL without a trailing slash
-#url: "https://example.com"
+#url: "https://mr-easy.github.io"
 
 # baseurl should be an empty string
 #baseurl: ""
@@ -20,7 +20,8 @@ description: Personal website and blog of Rishabh Gupta(mr easy)
 
 # List of links in the navigation bar
 navbar-links:
-  Home: "https://mr-easy.github.io"
+  Home: "index"
+  Blog: "blog"
   About Me: "aboutme"
   Things I do: "projects"
   Contact me: "contact"
