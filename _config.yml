@@ -22,7 +22,7 @@ description: Personal website and blog of Rishabh Gupta(mr easy)
 navbar-links:
   Home: ""
   Blog: "blog"
-  Things I do: "projects"
+  Projects: "projects"
   About Me: "aboutme"
   Contact me: "contact"
 
