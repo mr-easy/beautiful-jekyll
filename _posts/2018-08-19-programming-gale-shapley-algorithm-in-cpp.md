@@ -7,13 +7,12 @@ categories: post
 tags: [CP, C++, Algorithm]
 ---
 
-<h3>Introduction</h3>
-<p>
+
 We will be writing program for Gale-Shapley Algorithm in C++. This algorithm is used to solve the <b>Stable Marriage Problem</b>. <br />
-You can get the problem on SPOJ: https://www.spoj.com/problems/STABLEMP/ <br />
-or on codechef: https://www.codechef.com/problems/STABLEMP <br />
+You can get the problem on [SPOJ](https://www.spoj.com/problems/STABLEMP/),
+or on [codechef](https://www.codechef.com/problems/STABLEMP). <br />
 You can understand the algorithm from Gale-Shapley's paper: <a href="http://www.eecs.harvard.edu/cs286r/courses/fall09/papers/galeshapley.pdf">College Admissions and the Stability of Marriage</a>
-</p>
+
 
 <h3>The Algorithm</h3>
 <p>The algorithm is as follows:</p>
