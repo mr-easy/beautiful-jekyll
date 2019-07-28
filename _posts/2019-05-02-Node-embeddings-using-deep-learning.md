@@ -3,6 +3,7 @@ title: "Node embeddings using deep learning"
 start: 2019-04-01
 end: 2019-03-01
 categories: project
+tags: [Graphs, Deep-Learning]
 ---
 
 MACHINE LEARNING COURSE PROJECT:   

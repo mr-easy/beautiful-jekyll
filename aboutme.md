@@ -10,6 +10,10 @@ css: "/css/aboutme.css"
   <span class="fa fa-heart about-icon"></span>
   My name is <b>Rishabh Gupta</b>. 
 </p> 
+<p class="about-text">
+  <span class="fa fa-file-text-o about-icon"></span>
+  Download my CV here (<a href="/files/v4.2.pdf">pdf</a>).
+</p>
 
 <p class="about-text">
   <span class="fa fa-graduation-cap about-icon"></span>

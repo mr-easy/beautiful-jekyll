@@ -39,6 +39,19 @@ use-site-title: true
       </div>
     </div>
 
+   {% if project.tags.size > 0 %}
+    <div class="blog-tags">
+      Tags:
+      {% if site.link-tags %}
+      {% for tag in project.tags %}
+      <a href="{{ '/tags' | relative_url }}#{{- tag -}}">{{- tag -}}</a>
+      {% endfor %}
+      {% else %}
+        {{ project.tags | join: ", " }}
+      {% endif %}
+    </div>
+    {% endif %}
+
    </article>
   
 {% endfor %} 

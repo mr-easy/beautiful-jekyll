@@ -20,7 +20,7 @@ description: Personal website and blog of Rishabh Gupta(mr easy)
 
 # List of links in the navigation bar
 navbar-links:
-  Home: ""
+  Home: "index"
   Blog: "blog"
   Projects: "projects"
   About Me: "aboutme"
