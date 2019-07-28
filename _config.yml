@@ -20,15 +20,15 @@ description: Personal website and blog of Rishabh Gupta(mr easy)
 
 # List of links in the navigation bar
 navbar-links:
-  Home: "index"
+  Home: ""
   Blog: "blog"
-  About Me: "aboutme"
   Things I do: "projects"
+  About Me: "aboutme"
   Contact me: "contact"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
-avatar: "/img/avatar-icon.png"
+avatar: "/img/me.jpeg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
