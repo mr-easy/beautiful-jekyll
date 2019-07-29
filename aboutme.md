@@ -7,7 +7,7 @@ css: "/css/aboutme.css"
 <div id="aboutme-section">
 
 <p class="about-text">
-  <span class="fa fa-heart about-icon"></span>
+  <span class="fa fa-star about-icon"></span>
   My name is <b>Rishabh Gupta</b>. 
 </p> 
 <p class="about-text">
@@ -43,7 +43,7 @@ css: "/css/aboutme.css"
 </p>
 
 <p class="about-text">
-  <span class="fa fa-graduation-cap about-icon"></span>
+  <span class="fa fa-star about-icon"></span>
 I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</b> in GATE CSE 2018 (Score: 1000).   
 </p>
 
