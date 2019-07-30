@@ -31,12 +31,19 @@ use-site-title: true
     <div class="post-entry-container">
       {% if project.image %}
       <div class="post-image">
-          <img src="{{ post.image | relative_url }}">      
+          <img src="{{ project.image | relative_url }}">      
       </div>
       {% endif %}
       <div class="post-entry">
         {{ project.content }}
       </div>
+    </div>
+    <div>
+	{% if project.demo %}
+          <a href="{{ project.demo }}" class="fa fa-external-link-alt about-icon fa-3x" title="Demo of {{ project.title }}"></a>
+      	{% endif %}
+	{% if project.code %} <a href="{{ project.code }}" class="fa fa-github about-icon fa-3x" title="Code of {{ project.title }}"></a> 
+	{% endif %}
     </div>
 
    {% if project.tags.size > 0 %}
