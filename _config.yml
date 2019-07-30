@@ -87,8 +87,8 @@ social-network-links:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: false
-  facebook: false
+  twitter: true
+  facebook: true
   linkedin: true
 
 # How to display the link to the website in the footer
@@ -98,7 +98,7 @@ url-pretty: "mr-easy.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Web Statistics Section --- #
 
 # Fill in your Google Analytics gtag.js ID to track your website using gtag
-#gtag: ""
+#gtag: "UA-101604185-1"
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
