@@ -40,9 +40,14 @@ use-site-title: true
     </div>
     <div>
 	{% if project.demo %}
-          <a href="{{ project.demo }}" class="fa fa-external-link-alt about-icon fa-3x" title="Demo of {{ project.title }}"></a>
+
+          <a href="{{ project.demo }}" class="fa fa-external-link about-icon fa-3x" title="Demo of {{ project.title }}" style="margin:20px"></a>
+	
       	{% endif %}
-	{% if project.code %} <a href="{{ project.code }}" class="fa fa-github about-icon fa-3x" title="Code of {{ project.title }}"></a> 
+	{% if project.code %} 
+
+<a href="{{ project.code }}" class="fa fa-github about-icon fa-3x" title="Code of {{ project.title }}"></a> 
+
 	{% endif %}
     </div>
 
