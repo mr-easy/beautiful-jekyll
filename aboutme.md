@@ -23,19 +23,27 @@ css: "/css/aboutme.css"
 <span class="fa fa-graduation-cap about-icon"></span>
 <ul>
 <b>Courses done:</b>
+<li>Third Semester:
+  <ul>
+	<li>Computational Methods of Optimization (<a href="https://drona.csa.iisc.ac.in/~chiru/">Prof. Chiranjib Bhattacharyya</a>)</li>
+	<li>Stochastic Models and Applications (<a href="http://www.ee.iisc.ac.in/faculty/sastry/">Prof. P.S. Sastry</a>)</li>
+	<li>Data Analytics (<a href="https://ece.iisc.ac.in/~rajeshs/">Prof. Rajesh Sundaresan</a>/<a href="http://hariharan-ramesh.com/">Prof. Ramesh Hariharan</a>)</li>
+	<li>Bioinformatics (<a href="http://cds.iisc.ac.in/faculty/dpal/">Prof. Debnath Pal</a>/<a href="http://cds.iisc.ac.in/faculty/sekar/">Prof. K. Sekar</a>)</li>
+  </ul>
+</li>
 <li>Second Semester:
   <ul>
-	<li>Machine Learning</li>
-	<li>Practical Data Science</li>
-	<li>Computational Geometry and Topology</li>
+	<li>Machine Learning (<a href="https://www.csa.iisc.ac.in/~ambedkar/">Prof. Ambedkar Dukkipati</a>)</li>
+	<li>Practical Data Science (<a href="https://www.csa.iisc.ac.in/~shirish/">Prof. Shirish Shevade</a>)</li>
+	<li>Computational Geometry and Topology (<a href="https://www.csa.iisc.ac.in/~vijayn/">Prof. Vijay Natarajan</a>/<a href="https://www.csa.iisc.ac.in/~gsat/">Prof. Sathish Govindarajan</a>)</li>
   </ul>
 </li>
 <li>First Semester:
   <ul>
-	<li>Design and Analysis of Algorithms</li>
-	<li>Linear Algebra and Probability</li>
-	<li>Theory and Practice of Computer Systems Security</li>
-	<li>Graphics and Visualization</li>
+	<li>Design and Analysis of Algorithms (<a href="https://www.csa.iisc.ac.in/~barman/">Prof. Siddharth Barman</a>)</li>
+	<li>Linear Algebra and Probability (<a href="https://www.csa.iisc.ac.in/~mnm/">Prof. M. Narasimha Murty</a>/<a href="https://www.csa.iisc.ac.in/~shalabh/">Prof. Shalabh Bhatnagar</a>)</li>
+	<li>Theory and Practice of Computer Systems Security (<a href="https://www.csa.iisc.ac.in/~vg/">Prof. Vinod Ganapathy</a>)</li>
+	<li>Graphics and Visualization (<a href="https://www.csa.iisc.ac.in/~vijayn/">Prof. Vijay Natarajan</a></li>
   </ul>
 </li>
 </ul> 
