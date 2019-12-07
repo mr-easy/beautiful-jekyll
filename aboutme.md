@@ -25,25 +25,25 @@ css: "/css/aboutme.css"
 <b>Courses done:</b>
 <li>Third Semester:
   <ul>
-	<li>Computational Methods of Optimization (<a href="https://drona.csa.iisc.ac.in/~chiru/">Prof. Chiranjib Bhattacharyya</a>)</li>
-	<li>Stochastic Models and Applications (<a href="http://www.ee.iisc.ac.in/faculty/sastry/">Prof. P.S. Sastry</a>)</li>
-	<li>Data Analytics (<a href="https://ece.iisc.ac.in/~rajeshs/">Prof. Rajesh Sundaresan</a>/<a href="http://hariharan-ramesh.com/">Prof. Ramesh Hariharan</a>)</li>
-	<li>Bioinformatics (<a href="http://cds.iisc.ac.in/faculty/dpal/">Prof. Debnath Pal</a>/<a href="http://cds.iisc.ac.in/faculty/sekar/">Prof. K. Sekar</a>)</li>
+	<li>Computational Methods of Optimization ( <a href="https://drona.csa.iisc.ac.in/~chiru/">Prof. Chiranjib Bhattacharyya</a> )</li>
+	<li>Stochastic Models and Applications ( <a href="http://www.ee.iisc.ac.in/faculty/sastry/">Prof. P.S. Sastry</a> )</li>
+	<li>Data Analytics ( <a href="https://ece.iisc.ac.in/~rajeshs/">Prof. Rajesh Sundaresan</a> / <a href="http://hariharan-ramesh.com/">Prof. Ramesh Hariharan</a> )</li>
+	<li>Bioinformatics ( <a href="http://cds.iisc.ac.in/faculty/dpal/">Prof. Debnath Pal</a> / <a href="http://cds.iisc.ac.in/faculty/sekar/">Prof. K. Sekar</a> )</li>
   </ul>
 </li>
 <li>Second Semester:
   <ul>
-	<li>Machine Learning (<a href="https://www.csa.iisc.ac.in/~ambedkar/">Prof. Ambedkar Dukkipati</a>)</li>
-	<li>Practical Data Science (<a href="https://www.csa.iisc.ac.in/~shirish/">Prof. Shirish Shevade</a>)</li>
-	<li>Computational Geometry and Topology (<a href="https://www.csa.iisc.ac.in/~vijayn/">Prof. Vijay Natarajan</a>/<a href="https://www.csa.iisc.ac.in/~gsat/">Prof. Sathish Govindarajan</a>)</li>
+	<li>Machine Learning ( <a href="https://www.csa.iisc.ac.in/~ambedkar/">Prof. Ambedkar Dukkipati</a> )</li>
+	<li>Practical Data Science ( <a href="https://www.csa.iisc.ac.in/~shirish/">Prof. Shirish Shevade</a> )</li>
+	<li>Computational Geometry and Topology ( <a href="https://www.csa.iisc.ac.in/~vijayn/">Prof. Vijay Natarajan</a> / <a href="https://www.csa.iisc.ac.in/~gsat/">Prof. Sathish Govindarajan</a> )</li>
   </ul>
 </li>
 <li>First Semester:
   <ul>
-	<li>Design and Analysis of Algorithms (<a href="https://www.csa.iisc.ac.in/~barman/">Prof. Siddharth Barman</a>)</li>
-	<li>Linear Algebra and Probability (<a href="https://www.csa.iisc.ac.in/~mnm/">Prof. M. Narasimha Murty</a>/<a href="https://www.csa.iisc.ac.in/~shalabh/">Prof. Shalabh Bhatnagar</a>)</li>
-	<li>Theory and Practice of Computer Systems Security (<a href="https://www.csa.iisc.ac.in/~vg/">Prof. Vinod Ganapathy</a>)</li>
-	<li>Graphics and Visualization (<a href="https://www.csa.iisc.ac.in/~vijayn/">Prof. Vijay Natarajan</a></li>
+	<li>Design and Analysis of Algorithms ( <a href="https://www.csa.iisc.ac.in/~barman/">Prof. Siddharth Barman</a> )</li>
+	<li>Linear Algebra and Probability ( <a href="https://www.csa.iisc.ac.in/~mnm/">Prof. M. Narasimha Murty</a> / <a href="https://www.csa.iisc.ac.in/~shalabh/">Prof. Shalabh Bhatnagar</a> )</li>
+	<li>Graphics and Visualization ( <a href="https://www.csa.iisc.ac.in/~vijayn/">Prof. Vijay Natarajan)</a></li>
+	<li>Theory and Practice of Computer Systems Security ( <a href="https://www.csa.iisc.ac.in/~vg/">Prof. Vinod Ganapathy</a> )</li>
   </ul>
 </li>
 </ul> 
@@ -62,7 +62,7 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
 
 <p class="about-text">
   <span class="fa fa-briefcase about-icon"></span>
-  Currently, I am an intern at <b>LinkedIn, Bangalore</b>, working in the AI team.
+  I interned at <b>LinkedIn, Bangalore</b>, worked in the AI team.
 </p>
 
 <p class="about-text">
@@ -77,7 +77,7 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
 
 <p class="about-text">
   <span class="fa fa-heart about-icon"></span>
-  I love <b>animations</b>. Also try to create them. Mostly I prefer doing it the traditional way, i.e by drawing each frame. The software that I use is <a href="https://www.pencil2d.org/">pencil2D</a>. It's a nice and simple open-source tool for creating short length animations. I also use Wacom One (small) graphics pen tablet for drawing.
+  I love to wacth Animated movies and to create <b>animations</b>. Mostly I prefer doing it the traditional way, i.e by drawing each frame. <a href="https://www.pencil2d.org/">Pencil2D</a> is my favourite tool for it. It's nice and simple, open-source, good for short length animations. I have a Wacom One (small) graphics pen tablet. Some of <a href="https://in.pinterest.com/rishabhg1997/my-animated-gifs/">my short clips</a>.
 
 <div style="position:relative;height:0;padding-bottom:56.21%"><iframe src="https://www.youtube.com/embed/wRSGwh3zOKk?ecver=2" style="position:absolute;width:80%;height:80%;left:10%" width="641" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 </p>
