@@ -42,8 +42,8 @@ css: "/css/aboutme.css"
   <ul>
 	<li>Design and Analysis of Algorithms ( <a href="https://www.csa.iisc.ac.in/~barman/">Prof. Siddharth Barman</a> )</li>
 	<li>Linear Algebra and Probability ( <a href="https://www.csa.iisc.ac.in/~mnm/">Prof. M. Narasimha Murty</a> / <a href="https://www.csa.iisc.ac.in/~shalabh/">Prof. Shalabh Bhatnagar</a> )</li>
-	<li>Graphics and Visualization ( <a href="https://www.csa.iisc.ac.in/~vijayn/">Prof. Vijay Natarajan)</a></li>
-	<li>Theory and Practice of Computer Systems Security ( <a href="https://www.csa.iisc.ac.in/~vg/">Prof. Vinod Ganapathy</a> )</li>
+	<li>Graphics and Visualization ( <a href="https://www.csa.iisc.ac.in/~vijayn/">Prof. Vijay Natarajan</a> )</li>
+	<li>Theory and Practice of Computer System Security ( <a href="https://www.csa.iisc.ac.in/~vg/">Prof. Vinod Ganapathy</a> )</li>
   </ul>
 </li>
 </ul> 
@@ -77,7 +77,7 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
 
 <p class="about-text">
   <span class="fa fa-heart about-icon"></span>
-  I love to wacth Animated movies and to create <b>animations</b>. Mostly I prefer doing it the traditional way, i.e by drawing each frame. <a href="https://www.pencil2d.org/">Pencil2D</a> is my favourite tool for it. It's nice and simple, open-source, good for short length animations. I have a Wacom One (small) graphics pen tablet. Some of <a href="https://in.pinterest.com/rishabhg1997/my-animated-gifs/">my short clips</a>.
+  I love to watch Animated movies and to create <b>animations</b>. Mostly I prefer doing it the traditional way, i.e by drawing each frame. <a href="https://www.pencil2d.org/">Pencil2D</a> is my favourite tool for it. It's nice and simple, open-source, good for short length animations. I have a Wacom One (small) graphics pen tablet. Some of <a href="https://in.pinterest.com/rishabhg1997/my-animated-gifs/">my short clips</a>.
 
 <div style="position:relative;height:0;padding-bottom:56.21%"><iframe src="https://www.youtube.com/embed/wRSGwh3zOKk?ecver=2" style="position:absolute;width:80%;height:80%;left:10%" width="641" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 </p>
