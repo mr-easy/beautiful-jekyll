@@ -56,7 +56,7 @@ You can try out inverting other examples given in this post.
 That's it for this post. BWT is used in bzip and bzip2 for compression. BWT is also used for read alignment, where you have a lot of short query strings (known as reads) and you have to find whether it's a substring of a larger reference string. That's called Burrows-Wheeler Alignment.
 
 <h3>Extras</h3>
-<li>Original ).<a href="https://www.hpl.hp.com/techreports/Compaq-DEC/SRC-RR-124.pdf">technical report</a> of Burrows-Wheeler Transform (1994). </li>
+<li>Original <a href="https://www.hpl.hp.com/techreports/Compaq-DEC/SRC-RR-124.pdf">technical report</a> of Burrows-Wheeler Transform (1994). </li>
 <ul>
 <li>Google developers have a video on Burrows-Wheeler Transform, Watch it on <a href="https://www.youtube.com/watch?v=4WRANhDiSHM">youtube</a>. </li>
 <li>You can try BWT on this online <a href="http://guanine.evolbio.mpg.de/cgi-bin/bwt/bwt.cgi.pl">tool</a>.</li>
