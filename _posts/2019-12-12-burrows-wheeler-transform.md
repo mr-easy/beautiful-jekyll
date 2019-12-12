@@ -7,19 +7,19 @@ categories: post
 tags: [Algorithm, Bioinformatics]
 ---
 
-Burrows-Wheeler transform (or, BWT) is a block compression algorithm and is used in programs like bzip. The output of the algorithm is a string which contains chunks of same characters which can be easily written in a compact form. The compression is lossless, that is, we can get back the exact original string from the compressed format. The way it works is pretty amazing.
+Burrows-Wheeler transform (or, BWT) is a block compression algorithm and is used in programs like bzip. The output of the algorithm is a string which contains chunks of same characters which can be easily stored in a compact form. The compression is lossless, that is, we can get back the exact original string from the compressed format. The way it works is pretty amazing.
 
 <h3>The Algorithm</h3>
 The algorithm is very simple, you just sort all the rotations lexicographically and take the last column of it. That last column is the Burrows-Wheeler transform of the string. An example will make it clear. Let our string be "PANAMABANANA". We will add a $ at the end of the string, this end character should not be anywhere in the original string. (Considering $ to be the smallest character).
 
-<img src="{{ site.url }}/files/blog/bwt/panamabanana.png" width="100%">
+<img src="{{ site.url }}/files/blog/bwt/panamabanana.png" width="150%">
 
-The final transformed string we get is "ANMNNBPAAAAA$". Here, we can see that we get chunks of same characters, like 5 A's. This we can use for compressions. Compressed, we get "ANM2NBP5A$". For some strings we can get more characters together, resulting in better compression. Great! So, do we always get same characters together? NO. For example:
+The final transformed string we get is "ANMNNBPAAAAA$". This is the BWT of our original string. Compression? Here, we can see that we get chunks of same characters, like 5 A's. We can store it as "ANM2NBP5A$". For some strings we can get even more characters together in a continuous run, resulting in better compression. Great! So, do we always get same characters together? NO. For example:
 
 <img src="{{ site.url }}/files/blog/bwt/bad.png" width="100%">
 
 
-Here none of the characters is together. Nothing to compress. Worse than the original string. Let's see another example.
+"AC$BCDABDBADC". Here none of the characters is together. Nothing to compress. Worse than the original string. Let's see another example.
 
 <img src="{{ site.url }}/files/blog/bwt/good.png" width="100%">
 
@@ -29,26 +29,25 @@ Here none of the characters is together. Nothing to compress. Worse than the ori
 Great, we got our string compressed. But how to get back original string from this transform?
 
 <h3>Inverse</h3>
-To get back the original string from BWT, we just have to
-All the information is available in that last column(the BWT of the string) to get the original string back. First, let's look at an important fact about the first column and last column(BWT) of the sorted rotations.
-For any character x, the ith x in the first column corresponds to the ith x in the last column!
+All the information needed for inverting is available in that last column(the BWT of the string). First, let's look at an important fact about the first column and last column(BWT) of the sorted rotations.
 
-For example, in the "PANAMABANANA" example, the 2nd A in first column and the 2nd A in last column are the same A. Similarly, the 3rd N in first column and 3rd N in last column. 
+> For any character x, the i<sup>th</sup> x in the first column corresponds to the i<sup>th</sup> x in the last column!
+
+For example, in the "PANAMABANANA" example, the 2<sup>nd</sup> A in first column and the 2<sup>nd</sup> A in last column are the same A. Similarly, the 3<sup>rd</sup> N in first column and 3<sup>rd</sup> N in last column is same. 
+
+<img src="{{ site.url }}/files/blog/bwt/fact.png" width="30%">
+
 This will hold true for any character for any string. You can verify why that's true.
 
-<img src="{{ site.url }}/files/blog/bwt/fact.png" width="100%">
-
-
-Now to get back our string, we can start tracing character by character using last column(BWT) and first column. We have the last column, we can get the first column by sorting it (actually, you just need to count the occurrence of each character). We will start tracing from $ since we know that it's the last character. For ith x in last column, we will go to ith x in first column. Note that character. Get the corresponding character in last column and repeat. Keep doing till we hit the $.
+Now to get back our string, we can start tracing character by character using last column(BWT) and first column. We have the last column, we can get the first column by sorting it (actually, you just need to count the occurrence of each character). We will start tracing from $ since we know that it's the last character. For i<sup>th</sup> x in last column, we will go to i<sup>th</sup> x in first column. Note that character. Get the corresponding character in last column and repeat. Keep doing till we hit the $.
 
 Let's do it on a small example.
 
 <img src="{{ site.url }}/files/blog/bwt/raga.png" width="100%">
 
-
 Start by $. This is the first $ in the last column, so we go to first $ in the first column, that is, first row. We get an A. This is the first A in last column, so we go to first A in first column. Corresponding to it we get G. This is the first G, so we go to first G in first column, for which we get an A. This is second A in last column, going to second A in first column, we get R. This is the first R in last column, we go to first R in first column. We get a $ and we stop. Tada! We got back our original string "RAGA"!
 
-<img src="{{ site.url }}/files/blog/bwt/raga_back.png" width="100%">
+<img src="{{ site.url }}/files/blog/bwt/raga_back.jpg" width="100%">
 
 You can try out inverting other examples of this post.
 
