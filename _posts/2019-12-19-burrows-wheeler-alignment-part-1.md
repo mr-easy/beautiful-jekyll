@@ -57,10 +57,12 @@ We can now jump to the next character just before A and repeat this process. We 
 
 Let's follow through an example:
 
-    Reference sequence: C G A T G C A C C G G T $
+<pre>
+Reference sequence: C G A T G C A C C G G T $
     
-    Burrows-Wheeler: T  C  G  G  A  $  C  C  T  C  G  G  A
-    Suffix Array:    12 6  2  5  7  0  8  1  4  9  10 11 3
+Burrows-Wheeler: T  C  G  G  A  $  C  C  T  C  G  G  A
+Suffix Array:    12 6  2  5  7  0  8  1  4  9  10 11 3
+<pre>
 
 <img src="{{ site.url }}/files/blog/bwa1/ex1.png" width="100%">
 
@@ -81,8 +83,8 @@ We hit the end of the read. Voila! we found a match. We can get the index from t
 <img src="{{ site.url }}/files/blog/bwa1/ex5.png" width="100%">
 
 <pre>
-	Reference sequence: C G A T <b>G C A</b> C C G G T $
-    	Index:              0 1 2 3 <b>4</b> 5 6 7 8 . . . .
+Reference sequence: C G A T <b>G C A</b> C C G G T $
+Index:              0 1 2 3 <b>4</b> 5 6 7 8 . . . .
 </pre>
 
 If there were more than one matches, the band size would have been more than one, and all those indices would be a match. If there were none, the band size would have reduced to zero. Pretty simple, right?
