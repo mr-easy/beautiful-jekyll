@@ -62,7 +62,7 @@ Reference sequence: C G A T G C A C C G G T $
     
 Burrows-Wheeler: T  C  G  G  A  $  C  C  T  C  G  G  A
 Suffix Array:    12 6  2  5  7  0  8  1  4  9  10 11 3
-<pre>
+</pre>
 
 <img src="{{ site.url }}/files/blog/bwa1/ex1.png" width="100%">
 
