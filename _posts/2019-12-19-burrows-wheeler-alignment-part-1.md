@@ -80,8 +80,10 @@ We hit the end of the read. Voila! we found a match. We can get the index from t
 
 <img src="{{ site.url }}/files/blog/bwa1/ex5.png" width="100%">
 
-    Reference sequence: C G A T `**`G C A`**` C C G G T $
-    Index:              0 1 2 3 `**`4`**` 5 6 7 8 . . . .
+<pre>
+	Reference sequence: C G A T <b>G C A</b> C C G G T $
+    	Index:              0 1 2 3 <b>4</b> 5 6 7 8 . . . .
+</pre>
 
 If there were more than one matches, the band size would have been more than one, and all those indices would be a match. If there were none, the band size would have reduced to zero. Pretty simple, right?
 
