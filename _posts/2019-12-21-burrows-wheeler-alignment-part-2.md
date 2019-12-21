@@ -35,11 +35,12 @@ This pseudo-code should make it clear:
                        mismatch_left-1, read, index-1)
         return ans
 
-Where the bands store the starting indices of the band for each character as in the previous post. The initial call will be (where, N is the length of reference sequence):
+Where the bands store the starting indices of the band for each character as in the previous post. The initial call will be (where N is the length of reference sequence):
 
     BWA(1, N+1, mismatches_allowed, read, len(read))
 
-Let's follow through an example: CGATGCACCGGT 
+Let's follow through an example: CGATGCACCGGT.
+
 First, it's BWT:
 
 <img src="{{ site.url }}/files/blog/bwa2/bwt.png" width="100%">
@@ -55,7 +56,7 @@ Let our read to be matched be: CGA. With 1 mismatch allowed.
 
 We start with A. And start 4 BWA calls, 1 with the exact match of A and 3 others with a mismatch. In each of the 4 calls, we also save the number of mismatches left. Since, we already used a mismatch for C, G and T, mismatch_left counter becomes 0. While for A, it's still 1.
 
-<img src="{{ site.url }}/files/blog/bwa2/band.png" width="100%">
+<img src="{{ site.url }}/files/blog/bwa2/band.png" width="60%">
 
 The 4 bands we have are (1, 3), (3, 7), (7, 11), (11, 13). Next, we have a G. Now for each of these 4 bands, we will create 4 other bands. Our recursive calls will look like this (For clarity, I have removed the read from the calls, we have band_start, band_end, mismatches_left and index in order). It also shows the further recursive calls.
 
