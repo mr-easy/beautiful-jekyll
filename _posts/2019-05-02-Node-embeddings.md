@@ -1,7 +1,7 @@
 ---
 title: "Node embeddings"
-start: 2019-04-01
-end: 2019-03-01
+start: 2019-03-01
+end: 2019-04-01
 categories: project
 tags: [Graphs, ML]
 ---

@@ -6,7 +6,7 @@ css: "/css/aboutme.css"
 ---
 
 <form action="https://formspree.io/rishabhg1997@gmail.com" method="POST" class="form" id="contact-form">
-  <p>You can send me a quick message using the form below:</p>
+  <p>Leave me a message:</p>
   <div class="row">
     <div class="col-xs-6">
       <input type="email" name="_replyto" class="form-control input-lg" placeholder="Email" title="Email">

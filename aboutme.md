@@ -77,7 +77,7 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
 
 <p class="about-text">
   <span class="fa fa-heart about-icon"></span>
-  I love to watch Animated movies and to create <b>animations</b>. Mostly I prefer doing it the traditional way, i.e by drawing each frame. <a href="https://www.pencil2d.org/">Pencil2D</a> is my favourite tool for it. It's nice and simple, open-source, good for short length animations. I have a Wacom One (small) graphics pen tablet. Some of <a href="https://in.pinterest.com/rishabhg1997/my-animated-gifs/">my short clips</a>.
+  I love to watch Animated movies and to create <b>animations</b>. Mostly I prefer doing it the traditional way, i.e by drawing each frame. <a href="https://www.pencil2d.org/">Pencil2D</a> is my favourite tool for it. It's nice and simple, open-source, good for short length animations. I have a Wacom One (small) graphics pen tablet. Some of <a href="https://discuss.pencil2d.org/t/my-animation-work-progress/2626/8">my short animations</a>.
 
 <div style="position:relative;height:0;padding-bottom:56.21%"><iframe src="https://www.youtube.com/embed/wRSGwh3zOKk?ecver=2" style="position:absolute;width:80%;height:80%;left:10%" width="641" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 </p>

@@ -1,7 +1,7 @@
 ---
 title: "Topological Data Analysis on Dynamic graphs"
-start: 2019-04-01
-end: 2019-02-01
+start: 2019-02-01
+end: 2019-04-01
 categories: project
 tags: [TDA, Topology, Graphs]
 ---

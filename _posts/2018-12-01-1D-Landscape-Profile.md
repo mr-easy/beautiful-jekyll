@@ -1,7 +1,7 @@
 ---
 title: "1D Landscape Profile"
-start: 2018-10-01
-end: 2018-09-01
+start: 2018-09-01
+end: 2018-10-01
 categories: project
 tags: [Graphics, Visualization, d3.js]
 image: /img/project-imgs/landscape_profile.png
