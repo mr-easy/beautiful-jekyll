@@ -4,7 +4,8 @@
 title: Mr. Easy
 
 # Short description of your site
-description: Personal website and blog of Rishabh Gupta(mr easy)
+description: Personal website and blog of Rishabh Gupta, Masters student at Computer Science and Automation at Indian Institute of Science (IISc) Bangalore.
+Computer Science blog of random stuff. Projects of Rishabh Gupta. About.
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -20,11 +21,11 @@ description: Personal website and blog of Rishabh Gupta(mr easy)
 
 # List of links in the navigation bar
 navbar-links:
-  Home: "index"
-  Blog: "blog"
-  Projects: "projects"
-  About Me: "aboutme"
-  Contact me: "contact"
+  Home: "index/"
+  Blog: "blog/"
+  Projects: "projects/"
+  About Me: "aboutme/"
+  Contact me: "contact/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
