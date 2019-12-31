@@ -4,8 +4,7 @@
 title: Mr. Easy
 
 # Short description of your site
-description: Personal website and blog of Rishabh Gupta, Masters student at Computer Science and Automation at Indian Institute of Science (IISc) Bangalore.
-Computer Science blog of random stuff. Projects of Rishabh Gupta. About.
+description: Personal website and blog of Rishabh Gupta, Masters student at Computer Science and Automation at Indian Institute of Science (IISc) Bangalore. Computer Science blog of random stuff. Projects of Rishabh Gupta. About.
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl
@@ -21,7 +20,7 @@ Computer Science blog of random stuff. Projects of Rishabh Gupta. About.
 
 # List of links in the navigation bar
 navbar-links:
-  Home: "index/"
+  Home: "index"
   Blog: "blog/"
   Projects: "projects/"
   About Me: "aboutme/"
