@@ -35,6 +35,19 @@ layout: base
         {{ content }}
       </article>
 
+	{% if page.demo %}
+
+          <a href="{{ page.demo }}" class="fa fa-external-link about-icon fa-3x" title="Demo of {{ page.title }}" style="margin:20px"></a>
+	
+      	{% endif %}
+
+
+	{% if page.code %} 
+
+	<a href="{{ page.code }}" class="fa fa-github about-icon fa-3x" title="Code of {{ page.title }}"></a> 
+
+	{% endif %}
+
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
           Tags:

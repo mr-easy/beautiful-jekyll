@@ -19,6 +19,17 @@ css: "/css/aboutme.css"
   <span class="fa fa-graduation-cap about-icon"></span>
   I am an M.Tech student at <a href="https://www.iisc.ac.in/">Indian Institute of Science(IISc), Bangalore</a> in <a href="https://www.csa.iisc.ac.in/">Computer Science and Automation Department(CSA)</a>. Working under the guidance of <a href="https://drona.csa.iisc.ac.in/~chiru/">Prof. Chiranjib Bhattacharyya</a>.
 </p>
+
+<p class="about-text">
+  <span class="fa fa-code about-icon"></span>
+  I am interested in Machine Learning and AI. My journey has just begun.   
+</p>
+
+<p class="about-text">
+  <span class="fa fa-briefcase about-icon"></span>
+  I interned at <b>LinkedIn, Bangalore</b>, worked in the AI team.
+</p>
+
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
 <ul>
@@ -53,16 +64,6 @@ css: "/css/aboutme.css"
 <p class="about-text">
   <span class="fa fa-star about-icon"></span>
 I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</b> in GATE CSE 2018 (Score: 1000).   
-</p>
-
-<p class="about-text">
-  <span class="fa fa-code about-icon"></span>
-  I am interested in Machine Learning and AI. My journey has just begun.   
-</p>
-
-<p class="about-text">
-  <span class="fa fa-briefcase about-icon"></span>
-  I interned at <b>LinkedIn, Bangalore</b>, worked in the AI team.
 </p>
 
 <p class="about-text">
