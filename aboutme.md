@@ -17,7 +17,7 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
   <span class="fa fa-graduation-cap about-icon"></span>
-  I am an M.Tech student at <a href="https://www.iisc.ac.in/">Indian Institute of Science(IISc), Bangalore</a> in <a href="https://www.csa.iisc.ac.in/">Computer Science and Automation Department(CSA)</a>. Working under the guidance of <a href="https://drona.csa.iisc.ac.in/~chiru/">Prof. Chiranjib Bhattacharyya</a>.
+  I am an M.Tech student at <a href="https://www.iisc.ac.in/">Indian Institute of Science(IISc), Bangalore</a> in <a href="https://www.csa.iisc.ac.in/">Computer Science and Automation Department(CSA)</a>. Working under the guidance of <a href="https://drona.csa.iisc.ac.in/~chiru/">Prof. Chiranjib Bhattacharyya</a> at <a href="https://mllabiisc.github.io/">Machine Learning Lab</a>.
 </p>
 
 <p class="about-text">
@@ -81,6 +81,17 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
   I love to watch Animated movies and to create <b>animations</b>. Mostly I prefer doing it the traditional way, i.e by drawing each frame. <a href="https://www.pencil2d.org/">Pencil2D</a> is my favourite tool for it. It's nice and simple, open-source, good for short length animations. I have a Wacom One (small) graphics pen tablet. Some of <a href="https://discuss.pencil2d.org/t/my-animation-work-progress/2626/8">my short animations</a>.
 
 <div style="position:relative;height:0;padding-bottom:56.21%"><iframe src="https://www.youtube.com/embed/wRSGwh3zOKk?ecver=2" style="position:absolute;width:80%;height:80%;left:10%" width="641" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+</p>
+
+<p class="about-text">
+  <span class="fa fa-heart about-icon"></span>
+  <span class="fa fa-heart about-icon"></span>
+  <span class="fa fa-heart about-icon"></span>
+   FUN STUFF 
+  <span class="fa fa-heart about-icon"></span>
+  <span class="fa fa-heart about-icon"></span>
+  <span class="fa fa-heart about-icon"></span>
+  <img src="/img/fun_stuff/cover.jpg">
 </p>
 
 </div>
