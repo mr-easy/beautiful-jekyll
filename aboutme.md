@@ -84,15 +84,10 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
 </p>
 
 <p class="about-text">
-  <span class="fa fa-heart about-icon"></span>
-  <span class="fa fa-heart about-icon"></span>
-  <span class="fa fa-heart about-icon"></span>
-  <center><b>FUN STUFF</b></center> 
-  <span class="fa fa-heart about-icon"></span>
-  <span class="fa fa-heart about-icon"></span>
-  <span class="fa fa-heart about-icon"></span>
+  <center><b>*** FUN STUFF ***</b>
   <br />
   <img src="/img/fun_stuff/cover.jpg">
+  </center> 
 
 </p>
 
