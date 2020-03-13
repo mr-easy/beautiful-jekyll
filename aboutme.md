@@ -91,79 +91,72 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('3d')"> Nature</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('people')"> People</button>
+  <button class="btn" onclick="filterSelection('3D')"> 3D Stuff</button>
+  <button class="btn" onclick="filterSelection('2D')"> 2D Stuff</button>
 </div>
 
 <!-- Portfolio Gallery Grid -->
 <div class="row">
-  <div class="column 3d">
+  <div class="column 3D">
     <div class="content">
       <img src="/img/fun_stuff/lowpoly car small.gif" alt="Low Poly Car" style="width:100%">
       <h4>Low Poly Car</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column 3d">
+  <div class="column 3D">
     <div class="content">
-      <img src="img/fun_stuff/head.jpg" alt="Head" style="width:100%">
+      <img src="/img/fun_stuff/head.jpg" alt="Head" style="width:100%">
       <h4>3D Head Model</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column 3d">
+  <div class="column 3D">
     <div class="content">
-      <img src="img/fun_stuff/maletorso.jpg" alt="Male Torso" style="width:100%">
+      <img src="/img/fun_stuff/maletorso.jpg" alt="Male Torso" style="width:100%">
       <h4>3D Male Torso Model</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-
-  <div class="column cars">
+  <div class="column 3D">
     <div class="content">
-      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
-      <h4>Retro</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-      <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
-      <h4>Fast</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column cars">
-    <div class="content">
-      <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
-      <h4>Classic</h4>
+      <img src="/img/fun_stuff/robot.png" alt="Robot" style="width:100%">
+      <h4>3D Robot</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
 
-  <div class="column people">
+  <div class="column 2D">
     <div class="content">
-      <img src="/w3images/people1.jpg" alt="People" style="width:100%">
-      <h4>Girl</h4>
+      <img src="/img/fun_stuff/1-bouncing ball.gif" alt="Bouncing Ball" style="width:100%">
+      <h4>Bouncing Ball</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column people">
+
+  <div class="column 2D">
     <div class="content">
-      <img src="/w3images/people2.jpg" alt="People" style="width:100%">
-      <h4>Man</h4>
+      <img src="/img/fun_stuff/2-bouncing box.gif" alt="Bouncing Box" style="width:100%">
+      <h4>Bouncing Box</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-  <div class="column people">
+  <div class="column 2D">
     <div class="content">
-      <img src="/w3images/people3.jpg" alt="People" style="width:100%">
-      <h4>Woman</h4>
+      <img src="/img/fun_stuff/3-bouncing ball perspective.gif" alt="Bouncing Ball(perspective)" style="width:100%">
+      <h4>Bouncing Ball(perspective)</h4>
       <p>Lorem ipsum dolor..</p>
     </div>
   </div>
-<!-- END GRID -->
+  <div class="column 2D">
+    <div class="content">
+      <img src="/img/fun_stuff/4-bouncing cube.gif" alt="Bouncing Cube" style="width:100%">
+      <h4>Bouncing Cube</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <!-- END GRID -->
 </div>
 
 </p>
