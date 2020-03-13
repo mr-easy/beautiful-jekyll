@@ -86,13 +86,13 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
 <p class="about-text">
   <center><b>*** FUN STUFF ***</b>
   <br />
-  <img src="/img/fun_stuff/cover.jpg">
+  <img src="/img/fun_stuff/cover.jpg" style="width:100%">
   </center> 
 
 <div id="myBtnContainer">
-  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('3D')"> 3D Stuff</button>
-  <button class="btn" onclick="filterSelection('2D')"> 2D Stuff</button>
+  <button class="btn active" onclick="filterSelection('all')"> All </button>
+  <button class="btn" onclick="filterSelection('3D')"> 3D </button>
+  <button class="btn" onclick="filterSelection('2D')"> 2D </button>
 </div>
 
 <!-- Portfolio Gallery Grid -->
@@ -115,16 +115,17 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
       <h4>3D Male Torso Model</h4>
     </div>
   </div>
-
+</div>
+<div class="row">
   <div class="column 2D">
     <div class="content">
-      <img src="/img/fun_stuff/7-creating a flour sack.gif" alt="Creation" style="width:100%">
+      <img src="/img/fun_stuff/7-creating a flour sack.gif" alt="God's Creation!" style="width:100%">
       <h4>Creation</h4>
     </div>
   </div>
   <div class="column 2D">
     <div class="content">
-      <img src="/img/fun_stuff/9-flour sack waving.gif" alt="Hi!" style="width:100%">
+      <img src="/img/fun_stuff/9-flour sack waving.gif" alt="Hey!" style="width:100%">
       <h4>Hi!</h4>
     </div>
   </div>
@@ -191,7 +192,7 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
   </div>
   <div class="column 2D">
     <div class="content">
-      <img src="/img/fun_stuff/eye.gif" alt="Heavy Eye" style="width:100%">
+      <img src="/img/fun_stuff/eye.gif" alt="Heavy Eye!" style="width:100%">
       <h4>Heavy Eye</h4>
     </div>
   </div>
