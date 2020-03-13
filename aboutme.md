@@ -101,36 +101,55 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
     <div class="content">
       <img src="/img/fun_stuff/lowpoly car small.gif" alt="Low Poly Car" style="width:100%">
       <h4>Low Poly Car</h4>
-      <p>Lorem ipsum dolor..</p>
     </div>
   </div>
   <div class="column 3D">
     <div class="content">
       <img src="/img/fun_stuff/head.jpg" alt="Head" style="width:100%">
       <h4>3D Head Model</h4>
-      <p>Lorem ipsum dolor..</p>
     </div>
   </div>
   <div class="column 3D">
     <div class="content">
       <img src="/img/fun_stuff/maletorso.jpg" alt="Male Torso" style="width:100%">
       <h4>3D Male Torso Model</h4>
-      <p>Lorem ipsum dolor..</p>
-    </div>
-  </div>
-  <div class="column 3D">
-    <div class="content">
-      <img src="/img/fun_stuff/robot.png" alt="Robot" style="width:100%">
-      <h4>3D Robot</h4>
-      <p>Lorem ipsum dolor..</p>
     </div>
   </div>
 
   <div class="column 2D">
     <div class="content">
+      <img src="/img/fun_stuff/7-creating a flour sack.gif" alt="Creation" style="width:100%">
+      <h4>Creation</h4>
+    </div>
+  </div>
+  <div class="column 2D">
+    <div class="content">
+      <img src="/img/fun_stuff/9-flour sack waving.gif" alt="Hi!" style="width:100%">
+      <h4>Hi!</h4>
+    </div>
+  </div>
+  <div class="column 2D">
+    <div class="content">
+      <img src="/img/fun_stuff/10-flour sack walk.gif" alt="Walk" style="width:100%">
+      <h4>Walk</h4>
+    </div>
+  </div>
+  <div class="column 2D">
+    <div class="content">
+      <img src="/img/fun_stuff/11-flour sack jump 2.gif" alt="Jump" style="width:100%">
+      <h4>Jump</h4>
+    </div>
+  </div>
+  <div class="column 2D">
+    <div class="content">
+      <img src="/img/fun_stuff/8-flour sack jump.gif" alt="Jump Again" style="width:100%">
+      <h4>Jump Again</h4>
+    </div>
+  </div>
+  <div class="column 2D">
+    <div class="content">
       <img src="/img/fun_stuff/1-bouncing ball.gif" alt="Bouncing Ball" style="width:100%">
       <h4>Bouncing Ball</h4>
-      <p>Lorem ipsum dolor..</p>
     </div>
   </div>
 
@@ -138,21 +157,61 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
     <div class="content">
       <img src="/img/fun_stuff/2-bouncing box.gif" alt="Bouncing Box" style="width:100%">
       <h4>Bouncing Box</h4>
-      <p>Lorem ipsum dolor..</p>
     </div>
   </div>
   <div class="column 2D">
     <div class="content">
       <img src="/img/fun_stuff/3-bouncing ball perspective.gif" alt="Bouncing Ball(perspective)" style="width:100%">
-      <h4>Bouncing Ball(perspective)</h4>
-      <p>Lorem ipsum dolor..</p>
+      <h4>Bouncing Ball (perspective)</h4>
     </div>
   </div>
   <div class="column 2D">
     <div class="content">
       <img src="/img/fun_stuff/4-bouncing cube.gif" alt="Bouncing Cube" style="width:100%">
       <h4>Bouncing Cube</h4>
-      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column 2D">
+    <div class="content">
+      <img src="/img/fun_stuff/5-bouncing cube(improved).gif" alt="Bouncing Cube(Better)" style="width:100%">
+      <h4>Bouncing Cube (Better)</h4>
+    </div>
+  </div>
+  <div class="column 2D">
+    <div class="content">
+      <img src="/img/fun_stuff/6-bouncing cylinder.gif" alt="Bouncing Cylinder" style="width:100%">
+      <h4>Bouncing Cylinder</h4>
+    </div>
+  </div>
+  <div class="column 2D">
+    <div class="content">
+      <img src="/img/fun_stuff/mouth.gif" alt="Huh!" style="width:100%">
+      <h4>Huh!</h4>
+    </div>
+  </div>
+  <div class="column 2D">
+    <div class="content">
+      <img src="/img/fun_stuff/eye.gif" alt="Heavy Eye" style="width:100%">
+      <h4>Heavy Eye</h4>
+    </div>
+  </div>
+  <div class="column 2D">
+    <div class="content">
+      <img src="/img/fun_stuff/12-character wlk cycle.gif" alt="Walking" style="width:100%">
+      <h4>Walking</h4>
+    </div>
+  </div>
+  <div class="column 2D">
+    <div class="content">
+      <img src="/img/fun_stuff/13-dog walk cycle.gif" alt="Dog Walking" style="width:100%">
+      <h4>Dog Walking</h4>
+    </div>
+  </div>
+
+  <div class="column 3D">
+    <div class="content">
+      <img src="/img/fun_stuff/robot.png" alt="Robot" style="width:100%">
+      <h4>3D Robot</h4>
     </div>
   </div>
 
