@@ -1,6 +1,6 @@
 TODO LIST:
-  1. Add animation gifs
-  2. Add 3D models
-  3. Fix next/previous blog buttons
-  4. Add next/previous projects buttons
-  5. Add links to project pages
+	* Fix next/previous blog buttons
+	* Add next/previous projects buttons
+	* Add links to project pages
+	* Running locally on windows
+	* Add little gap above fun section buttons

@@ -34,6 +34,11 @@ css: "/css/aboutme.css"
 <span class="fa fa-graduation-cap about-icon"></span>
 <ul>
 <b>Courses done:</b>
+<li>Fourth Semester:
+  <ul>
+  <li>Deep Learning ( <a href="https://cedar.buffalo.edu/~srihari/">Prof. Sargur N. Srihari</a> )</li>
+  </ul>
+</li>
 <li>Third Semester:
   <ul>
 	<li>Computational Methods of Optimization ( <a href="https://drona.csa.iisc.ac.in/~chiru/">Prof. Chiranjib Bhattacharyya</a> )</li>
@@ -84,9 +89,9 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
 </p>
 
 <p class="about-text">
-  <center><b>*** FUN STUFF ***</b>
+  <center><b> &#9734; &#9734; &#9734; FUN STUFF &#9734; &#9734; &#9734; </b>
   <br />
-  <img src="/img/fun_stuff/cover.jpg" style="width:100%">
+  <!--<img src="/img/fun_stuff/cover.jpg" style="width:100%">-->
   </center> 
 
 <div id="myBtnContainer">
