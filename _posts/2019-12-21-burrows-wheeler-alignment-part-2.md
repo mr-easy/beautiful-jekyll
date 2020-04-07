@@ -4,7 +4,7 @@ title: "Burrows-Wheeler Alignment Part 2"
 description: Burrows-Wheeler Alignment (BWA) used for read alignment, matching smaller strings to a large string, part 2 inexact matching, allowing mismatches,  bioinformatics algorithms.
 date: 2019-12-21
 categories: post
-tags: [Algorithm, Bioinformatics]
+tags: [Blog, Algorithm, Bioinformatics]
 ---
 
 In [part 1]({{ site.url }}/2019-12-19-burrows-wheeler-alignment-part-1/) of this tutorial we looked at how we can solve the _read alignment_ problem using Burrows-Wheeler transform. In this post, we will continue exploring this algorithm and see how we can do read alignment with mismatches allowed. 

@@ -4,7 +4,7 @@ title: "Creating Spritesheet Animation in HTML5 canvas using Javascript"
 description: Tutorial on how to create sprite sheet animations in HTML5 canvas using Javascript
 date: 2017-06-26
 categories: post
-tags: [GameDev, JS]
+tags: [Blog, GameDev, JS]
 ---
 
 <p>In this article, I am going to tell you how to create spritesheet animations in HTML5 canvas using javascript. You can use these for creating animations in your HTML5 game. I will be using javascript(as the title says), but you can use this concept in other canvas, like canvas in Android(java).</p>

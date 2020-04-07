@@ -4,7 +4,7 @@ title: "Burrows-Wheeler Alignment Part 1"
 description: Burrows-Wheeler Alignment (BWA) used for read alignment, matching smaller strings to a large string, part 1 exact matching,  bioinformatics algorithms.
 date: 2019-12-19
 categories: post
-tags: [Algorithm, Bioinformatics]
+tags: [Blog, Algorithm, Bioinformatics]
 ---
 
 Consider the following problem of _read alignment_. You are given millions of small pieces of DNA sequence, called _reads_ and one large DNA sequence called the _reference sequence_ (DNA sequences contain only 4 letters A, C, G, T representing the four bases). You have to find how many of those reads matches the reference sequence and at what positions. In simplified form, you have many shorter strings to be matched against a single very large string. How can we do it fast?

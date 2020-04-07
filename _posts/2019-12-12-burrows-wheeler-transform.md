@@ -4,7 +4,7 @@ title: "Burrows-Wheeler Transform"
 description: Burrows-Wheeler transform (BWT) (block sorting compression) for compressing strings, bioinformatics algorithms.
 date: 2019-12-12
 categories: post
-tags: [Algorithm, Bioinformatics]
+tags: [Blog, Algorithm, Bioinformatics]
 ---
 
 Burrows-Wheeler transform (or, BWT) is a block compression algorithm and is used in programs like bzip. The output of the algorithm is a string which contains chunks of same characters which can be easily stored in a compact form. The compression is lossless, that is, we can get back the exact original string from the compressed format. The way it works is pretty amazing.
