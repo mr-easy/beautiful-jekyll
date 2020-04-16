@@ -18,3 +18,6 @@ Let's our two Normal distributions be $\mathcal{N}(\mu_p,\,\Sigma_p)$ and $\math
 PDF of [multivariate Normal distribution](https://en.wikipedia.org/wiki/Multivariate_normal_distribution) is given by:
 
 $$ P(\bm{x}) = \frac{1}{(2\pi)^{k/2}|\Sigma|^{1/2}} \exp(-\frac{1}{2}(\bm{x}-\mu)^T\sigma^{-1}(\bm{x}-\mu)) $$
+
+E_p[\log(p) - \log(q)]
+E_p[\frac{1}{2}\log|frac{|\Sigma_q|}{|\Sigma_p|} - \frac{1}{2}]
