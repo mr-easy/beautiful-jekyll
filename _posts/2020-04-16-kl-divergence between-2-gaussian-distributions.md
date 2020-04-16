@@ -15,7 +15,7 @@ $$ D_{KL}(p||q) = \int_x p(x) \log \frac{p(x)}{q(x)} $$
 
 And probabilty density function of [multivariate Normal distribution](https://en.wikipedia.org/wiki/Multivariate_normal_distribution) is given by:
 
-$$ P(\mathbf{x}) = \frac{1}{(2\pi)^{k/2}|\Sigma|^{1/2}} \exp(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^T\Sigma^{-1}(\mathbf{x}-\boldsymbol{\mu})) $$
+$$ P(\mathbf{x}) = \frac{1}{(2\pi)^{k/2}|\Sigma|^{1/2}} \exp\left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^T\Sigma^{-1}(\mathbf{x}-\boldsymbol{\mu})\right) $$
 
 Now, let our two Normal distributions be $$\mathcal{N}(\mathbf{\mu_p},\,\Sigma_p)$$ and $$\mathcal{N}(\mathbf{\mu_q},\,\Sigma_q)$$, both $$k$$ dimensional.
 
@@ -34,11 +34,11 @@ $$
 
 Now, since $$(\mathbf{x}-\boldsymbol{\mu_p})^T\Sigma_p^{-1}(\mathbf{x}-\boldsymbol{\mu_p})$$ in the second term $$ \in \mathbb{R} $$, we can write it as $$tr\left\{(\mathbf{x}-\boldsymbol{\mu_p})^T\Sigma_p^{-1}(\mathbf{x}-\boldsymbol{\mu_p})\right\}$$, where $$tr\{\}$$ is the trace operator. And using the trace trick (eq 16 of section 1.1 from [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)), we can write it as $$tr\left\{(\mathbf{x}-\boldsymbol{\mu_p})(\mathbf{x}-\boldsymbol{\mu_p})^T\Sigma_p^{-1}\right\}$$.
 
-The second term now is:
+The second term now is,
 
 $$ = \frac{1}{2}\mathbb{E}_p\left[tr\left\{(\mathbf{x}-\boldsymbol{\mu_p})(\mathbf{x}-\boldsymbol{\mu_p})^T\Sigma_p^{-1}\right\}\right]$$
-\newline
-The expectation and trace can be interchanged to get:
+
+The expectation and trace can be interchanged to get,
 
 $$
 \begin{aligned}
@@ -48,7 +48,7 @@ $$
 \end{aligned}
 $$
 
-We know $$\mathbb{E}_p\left[(\mathbf{x}-\boldsymbol{\mu_p})(\mathbf{x}-\boldsymbol{\mu_p})^T\right] = \Sigma_p $$. Simplifying it to, 
+We know $$\mathbb{E}_p\left[(\mathbf{x}-\boldsymbol{\mu_p})(\mathbf{x}-\boldsymbol{\mu_p})^T\right] = \Sigma_p $$. Simplifying it to
 
 $$
 \begin{aligned}
@@ -60,8 +60,8 @@ $$
 \end{aligned}
 $$
 
-We can simplify the third term using eq 380 of section 8.2 from [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf).
-We get:
+We can simplify the third term using eq 380 of section 8.2 from [Matrix Cookbook](https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf)
+We get,
 
 $$\mathbb{E}_p\left[(\mathbf{x}-\boldsymbol{\mu_q})^T\Sigma_q^{-1}(\mathbf{x}-\boldsymbol{\mu_q})\right] = (\boldsymbol{\mu_p}-\boldsymbol{\mu_q})^T\Sigma_q^{-1}(\boldsymbol{\mu_p}-\boldsymbol{\mu_q}) + tr\left\{\Sigma_q^{-1}\Sigma_p\right\}$$
 
