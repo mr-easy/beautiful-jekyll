@@ -13,8 +13,8 @@ tags: [Blog, Probability]
 
 $$ D_{KL}(p||q) = \int_x p(x) \log \frac{p(x)}{q(x)} $$
 
-Let's our two Normal distributions be $\mathcal{N}(\mu_p,\,\Sigma_p)$ and $\mathcal{N}(\mu_q,\,\Sigma_q)$.
+Let's our two Normal distributions be $\mathcal{N}(\mu_p,\,\Sigma_p)$ and $\mathcal{N}(\mu_q,\,\Sigma_q)$, both $k$ dimensional.
 
 PDF of [multivariate Normal distribution](https://en.wikipedia.org/wiki/Multivariate_normal_distribution) is given by:
 
-$$ P(x) = \frac{1}{(2\pi)^{k/2}|\Sigma|^{1/2}} \exp(-\frac{1}{2}(x-\mu)^T\sigma^{-1}(x-\mu)) $$
+$$ P(\bm{x}) = \frac{1}{(2\pi)^{k/2}|\Sigma|^{1/2}} \exp(-\frac{1}{2}(\bm{x}-\mu)^T\sigma^{-1}(\bm{x}-\mu)) $$
