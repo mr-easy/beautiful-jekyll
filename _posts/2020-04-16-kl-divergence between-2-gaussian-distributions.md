@@ -15,9 +15,9 @@ $$ D_{KL}(p||q) = \int_x p(x) \log \frac{p(x)}{q(x)} $$
 
 And probabilty density function of [multivariate Normal distribution](https://en.wikipedia.org/wiki/Multivariate_normal_distribution) is given by:
 
-$$ P(\mathbf{x}) = \frac{1}{(2\pi)^{k/2}|\Sigma|^{1/2}} \exp\left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^T\Sigma^{-1}(\mathbf{x}-\boldsymbol{\mu})\right) $$
+$$ p(\mathbf{x}) = \frac{1}{(2\pi)^{k/2}|\Sigma|^{1/2}} \exp\left(-\frac{1}{2}(\mathbf{x}-\boldsymbol{\mu})^T\Sigma^{-1}(\mathbf{x}-\boldsymbol{\mu})\right) $$
 
-Now, let our two Normal distributions be $$\mathcal{N}(\mathbf{\mu_p},\,\Sigma_p)$$ and $$\mathcal{N}(\mathbf{\mu_q},\,\Sigma_q)$$, both $$k$$ dimensional.
+Now, let our two Normal distributions be $$\mathcal{N}(\boldsymbol{\mu_p},\,\Sigma_p)$$ and $$\mathcal{N}(\boldsymbol{\mu_q},\,\Sigma_q)$$, both $$k$$ dimensional.
 
 $$
 \begin{aligned}
@@ -65,9 +65,11 @@ We get,
 
 $$\mathbb{E}_p\left[(\mathbf{x}-\boldsymbol{\mu_q})^T\Sigma_q^{-1}(\mathbf{x}-\boldsymbol{\mu_q})\right] = (\boldsymbol{\mu_p}-\boldsymbol{\mu_q})^T\Sigma_q^{-1}(\boldsymbol{\mu_p}-\boldsymbol{\mu_q}) + tr\left\{\Sigma_q^{-1}\Sigma_p\right\}$$
 
-Combining all this, we get,
+Combining all this we get,
 
+---
 $$ D_{KL}(p||q) = \frac{1}{2}\left[\log\frac{|\Sigma_q|}{|\Sigma_p|} - k + (\boldsymbol{\mu_p}-\boldsymbol{\mu_q})^T\Sigma_q^{-1}(\boldsymbol{\mu_p}-\boldsymbol{\mu_q}) + tr\left\{\Sigma_q^{-1}\Sigma_p\right\}\right] $$
+---
 
 <b>When $$q$$ is $$\mathcal{N}(0,\,I)$$, we get,</b>
 
