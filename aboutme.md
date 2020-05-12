@@ -196,6 +196,8 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
       <h4>Huh!</h4>
     </div>
   </div>
+</div>
+<div class="row">
   <div class="column 2D">
     <div class="content">
       <img src="/img/fun_stuff/eye.gif" alt="Heavy Eye!" style="width:100%">
