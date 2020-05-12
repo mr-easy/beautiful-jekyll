@@ -27,7 +27,7 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
   <span class="fa fa-briefcase about-icon"></span>
-  I interned at <b>LinkedIn, Bangalore</b>, worked in the AI team.
+  I did an internship at <b>LinkedIn, Bangalore</b> in May 2019, worked in the AI team.
 </p>
 
 <p class="about-text">
@@ -158,7 +158,8 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
       <h4>Bouncing Ball</h4>
     </div>
   </div>
-
+</div>
+<div class="row">
   <div class="column 2D">
     <div class="content">
       <img src="/img/fun_stuff/2-bouncing box.gif" alt="Bouncing Box" style="width:100%">
@@ -177,6 +178,7 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
       <h4>Bouncing Cube</h4>
     </div>
   </div>
+
   <div class="column 2D">
     <div class="content">
       <img src="/img/fun_stuff/5-bouncing cube(improved).gif" alt="Bouncing Cube(Better)" style="width:100%">
