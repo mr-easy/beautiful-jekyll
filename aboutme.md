@@ -158,8 +158,6 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
       <h4>Bouncing Ball</h4>
     </div>
   </div>
-</div>
-<div class="row">
   <div class="column 2D">
     <div class="content">
       <img src="/img/fun_stuff/2-bouncing box.gif" alt="Bouncing Box" style="width:100%">
@@ -178,7 +176,8 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
       <h4>Bouncing Cube</h4>
     </div>
   </div>
-
+</div>
+<div class="row">
   <div class="column 2D">
     <div class="content">
       <img src="/img/fun_stuff/5-bouncing cube(improved).gif" alt="Bouncing Cube(Better)" style="width:100%">
