@@ -17,25 +17,23 @@ $$\boldsymbol{\mu} = \begin{bmatrix}\mu_0\\\mu_1\end{bmatrix} \qquad \Sigma = \b
 
 For Gibbs sampling, we need to sample from the conditional of one variable, given the values of all other variables. So in our case, we need to sample from $$p(x_0|x_1)$$ and $$p(x_1|x_0)$$ to get one sample from our original distribution $$P$$. So, our main sampler will contain two simple sampling from these conditional distributions:
 
-{% highlight python %}
-def gibbs_sampler(initial_point, num_samples, ...):
+	 def gibbs_sampler(initial_point, num_samples, ...):
+		x_0 = initial_point[0]
+		x_1 = initial_point[1]
+		samples = np.empty([num_samples+1, 2])  #sampled points
+		samples[0] = [x_0, x_1]
 
-	x_0 = initial_point[0]
-	x_1 = initial_point[1]
-	samples = np.empty([num_samples+1, 2])  #sampled points
-	samples[0] = [x_0, x_1]
+		for i in range(num_samples):
 
-	for i in range(num_samples):
-
-	    # Sample from p(x_0|x_1)
-	    x_0 = conditional_sampler(sampling_index=0, condition_on=x_1, ...)
+		    # Sample from p(x_0|x_1)
+		    x_0 = conditional_sampler(sampling_index=0, condition_on=x_1, ...)
+		    
+		    # Sample from p(x_1|x_0)
+		    x_1 = conditional_sampler(sampling_index=1, condition_on=x_0, ...)
+	    	
+	    	samples[i+1] = [x_0, x_1]
 	    
-	    # Sample from p(x_1|x_0)
-	    x_1 = conditional_sampler(sampling_index=1, condition_on=x_0, ...)
-    	samples[i+1] = [x_0, x_1]
-    
-    return samples
-{% endhighlight %}
+	    return samples
 
 Now we need to write functions to sample from 1D conditional distributions. Remember that in Gibbs sampling we assume that although the original distribution is hard to sample from, but the conditional distributions of each variable given rest of the variables is simple to sample from. 
 
@@ -52,7 +50,7 @@ $$p(x_1 | x_0) \sim \mathcal(N)(\mu_1 + \frac{\Sigma_{01}}{\Sigma_{00}}(x_0 - \m
 Because they are so similar, we can use just one function for both of them. We used numpy's ```random.randn()``` which gives a sample from standard normal, we transform it by multiplying with standard deviation and shifting it by the mean of out distribution. The following function is the implementation of above equations and gives us sample from these distributions.
 
 {% highlight python %}
-def conditional_sampler(sampling_index, current_x, mean, cov):
+ def conditional_sampler(sampling_index, current_x, mean, cov):
     conditioned_index = 1 - sampling_index # Because we only have 2 variables, x_0 & x_1
     a = cov[sampling_index, sampling_index]
     b = cov[sampling_index, conditioned_index]
@@ -69,7 +67,7 @@ def conditional_sampler(sampling_index, current_x, mean, cov):
 Now we can sample as many points as we want, starting from an inital point:
 
 {% highlight python %}
-def gibbs_sampler(initial_point, num_samples, mean, cov):
+ def gibbs_sampler(initial_point, num_samples, mean, cov):
 
 	point = np.array(initial_point)
 	samples = np.empty([num_samples+1, 2])  #sampled points
