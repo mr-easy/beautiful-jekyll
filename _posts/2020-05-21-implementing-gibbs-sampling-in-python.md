@@ -2,7 +2,7 @@
 layout: post
 title: "Implementing Gibbs Sampling in Python"
 description: Programming Gibbs Sampling sampler in python for 2D Gaussian distribution and visualizing it.
-date: 2018-08-19
+date: 2020-05-21
 categories: post
 tags: [Blog, Probability, Visualization, Python]
 ---
@@ -11,11 +11,11 @@ Suppose we have a joint distribution $$P$$ on multiple random variables which we
 
 For keeping things simple, we will program Gibbs sampling for simple 2D Gaussian distribution. Albeit its simple to sample from multivariate Gaussian distribution, but we'll assume that it's not and hence we need to use some other method to sample from it, i.e., Gibbs sampling.
 
-Let our original distribution for which we need to sample be $$P \sim \mathcal(N)(boldsymbol{\mu}, \Sigma)$$. Where, $$boldsymbol{\mu} \in \R^2$$ is the mean vector and $$\Sigma \in \R^{2x2}$$ is the symmetric positive semi-definite covariance matrix. And each of the sample will be $$\mathbf{x} = \[x_0, x_1\]^T$$.
+Let our original distribution for which we need to sample be $$ P \sim \mathcal(N)(boldsymbol{\mu}, \Sigma) $$. Where, $$ boldsymbol{\mu} \in \mathbb{R}^2 $$ is the mean vector and $$ \Sigma \in \mathbb{R}^{2\cross2} $$ is the symmetric positive semi-definite covariance matrix. And each of the sample will be $$ \mathbf{x} = [x_0, x_1]^T $$.
 
-$$\boldsymbol{\mu} = \begin{bmatrix}\mu_0\\\mu_1\end{bmatrix} \qquad \Sigma = \begin{bmatrix}\Sigma_{00} & \Sigma_{01}\\\Sigma_{10} & \Sigma_{11}\end{bmatrix}$$
+$$ \boldsymbol{\mu} = \begin{bmatrix}\mu_0\\\mu_1\end{bmatrix} \qquad \Sigma = \begin{bmatrix}\Sigma_{00} & \Sigma_{01}\\\Sigma_{10} & \Sigma_{11}\end{bmatrix} $$
 
-For Gibbs sampling, we need to sample from the conditional of one variable, given the values of all other variables. So in our case, we need to sample from $$p(x_0|x_1)$$ and $$p(x_1|x_0)$$ to get one sample from our original distribution $$P$$. So, our main sampler will contain two simple sampling from these conditional distributions:
+For Gibbs sampling, we need to sample from the conditional of one variable, given the values of all other variables. So in our case, we need to sample from $$ p(x_0|x_1) $$ and $$ p(x_1|x_0) $$ to get one sample from our original distribution $$ P $$. So, our main sampler will contain two simple sampling from these conditional distributions:
 
 ```
 def gibbs_sampler(initial_point, num_samples, ...):
@@ -38,15 +38,15 @@ def gibbs_sampler(initial_point, num_samples, ...):
 ```
 Now we need to write functions to sample from 1D conditional distributions. Remember that in Gibbs sampling we assume that although the original distribution is hard to sample from, but the conditional distributions of each variable given rest of the variables is simple to sample from. 
 
-Multivariate Gaussian has the characteristic that for a multivariate Gaussian, the conditional distributions are also Gaussian (and the marginals too). For the proof, interested readers can refer to Chapter 3 of PRML book by C.Bishop. 
+Multivariate Gaussian has the characteristic that for a multivariate Gaussian, the conditional distributions are also Gaussian (and the marginals too). For the proof, interested readers can refer to Chapter 3 of <a href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/">PRML book by C.Bishop</a>. 
 
-For the 2D case, the conditional distribution of x_0 given x_1 is single variable Gaussian:
+For the 2D case, the conditional distribution of $$x_0$$ given $$x_1$$ is single variable Gaussian:
 
-$$p(x_0 | x_1) \sim \mathcal(N)(\mu_0 + \frac{\Sigma_{01}}{\Sigma_{11}}(x_1 - \mu_1), \Sigma_{00} - \frac{\Sigma_{01}^2}{\Sigma_{11}})$$
+$$ p(x_0|x_1) \sim \mathcal{N}(\mu_0 + \frac{\Sigma_{01}}{\Sigma_{11}}(x_1 - \mu_1), \Sigma_{00} - \frac{\Sigma_{01}^2}{\Sigma_{11}}) $$
 
-And similarly for $$p(x_1 | x_0)$$
+And similarly for $$ p(x_1|x_0) $$
 
-$$p(x_1 | x_0) \sim \mathcal(N)(\mu_1 + \frac{\Sigma_{01}}{\Sigma_{00}}(x_0 - \mu_0), \Sigma_{11} - \frac{\Sigma_{01}^2}{\Sigma_{00}})$$
+$$ p(x_1|x_0) \sim \mathcal{N}(\mu_1 + \frac{\Sigma_{01}}{\Sigma_{00}}(x_0 - \mu_0), \Sigma_{11} - \frac{\Sigma_{01}^2}{\Sigma_{00}}) $$
 
 Because they are so similar, we can use just one function for both of them. We used NumPy's ```random.randn()``` which gives a sample from standard normal, we transform it by multiplying with standard deviation and shifting it by the mean of out distribution. The following function is the implementation of the above equations and gives us a sample from these distributions.
 
@@ -89,6 +89,7 @@ Now we can sample as many points as we want, starting from an inital point:
 
 
 Let's see it in action. First let's plot our true distribution, which lets say have the following parameters
+
 $$\boldsymbol{\mu} = \begin{bmatrix}0\\0\end{bmatrix} \qquad \Sigma = \begin{bmatrix}10 & 3\\3 & 5\end{bmatrix}$$
 
 <img src="{{ site.url }}/files/blog/gibbs/true.png" width="100%">
@@ -97,6 +98,6 @@ Let's begin sampling! And also we will estimate a Gaussian from the sampled poin
 
 <img src="{{ site.url }}/files/blog/gibbs/gibbs.gif" width="100%">
 
-The complete code for this example along with all the plotting and creating GIFs is available at my repo. For plotting Gaussian contours, I used the code from <a href="https://matplotlib.org/gallery/statistics/confidence_ellipse.html">this matplotlib tutorial</a>.
+The complete code for this example along with all the plotting and creating GIFs is available at my <a href="https://github.com/mr-easy/Gibbs-Sampling-Visualized">github repository</a>. For plotting Gaussian contours, I used the code from <a href="https://matplotlib.org/gallery/statistics/confidence_ellipse.html">this matplotlib tutorial</a>.
 
 Now, of course, you won't be using Gibbs sampling for sampling from multivariate Gaussians. So for any general intractable distribution, you need to have conditional samplers for each of the random variable given others. And you will be good to go.
