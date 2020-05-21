@@ -7,7 +7,7 @@ categories: post
 tags: [Blog, Probability, Visualization, Python]
 ---
 
-Suppose we have a joint distribution $$P$$ on multiple random variables which we can't sample from directly. But we require the samples. One way is to use **MCMC**, and a special and simple example of MCMC is **Gibbs sampling**. Where we know that sampling from $$P$$ is hard, but sampling from conditional distribution of one variable at a time conditioned on rest of the variables is simpler. And it's possible because sampling from 1D distributions is simpler in general. 
+Suppose we have a joint distribution $$P$$ on multiple random variables which we can't sample from directly. But we require the samples. One way is to use **MCMC**, and a special and simple example of MCMC is **Gibbs sampling**. Where we know that sampling from $$P$$ is hard, but sampling from the conditional distribution of one variable at a time conditioned on rest of the variables is simpler. And it's possible because sampling from 1D distributions is simpler in general. 
 
 For keeping things simple, we will program Gibbs sampling for simple 2D Gaussian distribution. Albeit its simple to sample from multivariate Gaussian distribution, but we'll assume that it's not and hence we need to use some other method to sample from it, i.e., Gibbs sampling.
 
@@ -18,27 +18,27 @@ $$\boldsymbol{\mu} = \begin{bmatrix}\mu_0\\\mu_1\end{bmatrix} \qquad \Sigma = \b
 For Gibbs sampling, we need to sample from the conditional of one variable, given the values of all other variables. So in our case, we need to sample from $$p(x_0|x_1)$$ and $$p(x_1|x_0)$$ to get one sample from our original distribution $$P$$. So, our main sampler will contain two simple sampling from these conditional distributions:
 
 ```
-	 def gibbs_sampler(initial_point, num_samples, ...):
-		x_0 = initial_point[0]
-		x_1 = initial_point[1]
-		samples = np.empty([num_samples+1, 2])  #sampled points
-		samples[0] = [x_0, x_1]
+def gibbs_sampler(initial_point, num_samples, ...):
+  x_0 = initial_point[0]
+  x_1 = initial_point[1]
+  samples = np.empty([num_samples+1, 2])  #sampled points
+  samples[0] = [x_0, x_1]
 
-		for i in range(num_samples):
+  for i in range(num_samples):
 
-			# Sample from p(x_0|x_1)
-			x_0 = conditional_sampler(sampling_index=0, condition_on=x_1, ...)
-			
-			# Sample from p(x_1|x_0)
-			x_1 = conditional_sampler(sampling_index=1, condition_on=x_0, ...)
-	    	
-			samples[i+1] = [x_0, x_1]
-	    
-	    return samples
+    # Sample from p(x_0|x_1)
+    x_0 = conditional_sampler(sampling_index=0, condition_on=x_1, ...)
+
+    # Sample from p(x_1|x_0)
+    x_1 = conditional_sampler(sampling_index=1, condition_on=x_0, ...)
+  
+    samples[i+1] = [x_0, x_1]
+
+  return samples
 ```
 Now we need to write functions to sample from 1D conditional distributions. Remember that in Gibbs sampling we assume that although the original distribution is hard to sample from, but the conditional distributions of each variable given rest of the variables is simple to sample from. 
 
-Mutivariate Gaussian has the characteristic that for a multivariate Gaussian, the conditional distributions are also Gaussian (and the marginals too). For the proof, interested readers can refer to Chapter 3 of PRML book by C.Bishop. 
+Multivariate Gaussian has the characteristic that for a multivariate Gaussian, the conditional distributions are also Gaussian (and the marginals too). For the proof, interested readers can refer to Chapter 3 of PRML book by C.Bishop. 
 
 For the 2D case, the conditional distribution of x_0 given x_1 is single variable Gaussian:
 
@@ -48,7 +48,7 @@ And similarly for $$p(x_1 | x_0)$$
 
 $$p(x_1 | x_0) \sim \mathcal(N)(\mu_1 + \frac{\Sigma_{01}}{\Sigma_{00}}(x_0 - \mu_0), \Sigma_{11} - \frac{\Sigma_{01}^2}{\Sigma_{00}})$$
 
-Because they are so similar, we can use just one function for both of them. We used numpy's ```random.randn()``` which gives a sample from standard normal, we transform it by multiplying with standard deviation and shifting it by the mean of out distribution. The following function is the implementation of above equations and gives us sample from these distributions.
+Because they are so similar, we can use just one function for both of them. We used NumPy's ```random.randn()``` which gives a sample from standard normal, we transform it by multiplying with standard deviation and shifting it by the mean of out distribution. The following function is the implementation of the above equations and gives us a sample from these distributions.
 
 {% highlight python %}
  def conditional_sampler(sampling_index, current_x, mean, cov):
@@ -59,7 +59,7 @@ Because they are so similar, we can use just one function for both of them. We u
     c = cov[conditioned_index, conditioned_index]
   
     mu = mean[sampling_index] + 
-    	 (b * (current_x[conditioned_index] - mean[conditioned_index]))/c
+         (b * (current_x[conditioned_index] - mean[conditioned_index]))/c
     sigma = np.sqrt(a-(b**2)/c)
     new_x = np.copy(current_x)
     new_x[sampling_index] = np.random.randn()*sigma + mu
@@ -71,19 +71,19 @@ Now we can sample as many points as we want, starting from an inital point:
 {% highlight python %}
  def gibbs_sampler(initial_point, num_samples, mean, cov):
 
-	point = np.array(initial_point)
-	samples = np.empty([num_samples+1, 2])  #sampled points
-	samples[0] = point
-	tmp_points = np.empty([num_samples, 2]) #inbetween points
+    point = np.array(initial_point)
+    samples = np.empty([num_samples+1, 2])  #sampled points
+    samples[0] = point
+    tmp_points = np.empty([num_samples, 2]) #inbetween points
 
-	for i in range(num_samples):
-	    # Sample from p(x_0|x_1)
-	    point = conditional_sampler(0, point, mean, cov)
-		tmp_points[i] = point
-		# Sample from p(x_1|x_0)
-		point = conditional_sampler(1, point, mean, cov)
-		samples[i+1] = point
-    
+    for i in range(num_samples):
+        # Sample from p(x_0|x_1)
+        point = conditional_sampler(0, point, mean, cov)
+        tmp_points[i] = point
+        # Sample from p(x_1|x_0)
+        point = conditional_sampler(1, point, mean, cov)
+        samples[i+1] = point
+
     return samples, tmp_points
 {% endhighlight %}
 
@@ -93,10 +93,10 @@ $$\boldsymbol{\mu} = \begin{bmatrix}0\\1\end{bmatrix} \qquad \Sigma = \begin{bma
 
 <img src="{{ site.url }}/files/blog/gibbs/true.png" width="100%">
 
-Let's begin sampling! And also we will estimate a gaussian from the sampled points to see how close we get to the true distribution with increasing number of samples.
+Let's begin sampling! And also we will estimate a Gaussian from the sampled points to see how close we get to the true distribution with the increasing number of samples.
 
 <img src="{{ site.url }}/files/blog/gibbs/gibbs.gif" width="100%">
 
 The complete code for this example along with all the plotting and creating GIFs is available at my repo. For plotting Gaussian contours, I used the code from <a href="https://matplotlib.org/gallery/statistics/confidence_ellipse.html">this matplotlib tutorial</a>.
 
-Now, of course you won't be using Gibbs sampling for sampling from mutivariate Gaussians. So for any general intractable distribution, you need to have conditional samplers for each of the random variable given others. And you will be good to go.
+Now, of course, you won't be using Gibbs sampling for sampling from multivariate Gaussians. So for any general intractable distribution, you need to have conditional samplers for each of the random variable given others. And you will be good to go.
