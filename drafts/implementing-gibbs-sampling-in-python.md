@@ -17,6 +17,7 @@ $$\boldsymbol{\mu} = \begin{bmatrix}\mu_0\\\mu_1\end{bmatrix} \qquad \Sigma = \b
 
 For Gibbs sampling, we need to sample from the conditional of one variable, given the values of all other variables. So in our case, we need to sample from $$p(x_0|x_1)$$ and $$p(x_1|x_0)$$ to get one sample from our original distribution $$P$$. So, our main sampler will contain two simple sampling from these conditional distributions:
 
+```
 	 def gibbs_sampler(initial_point, num_samples, ...):
 		x_0 = initial_point[0]
 		x_1 = initial_point[1]
@@ -25,16 +26,16 @@ For Gibbs sampling, we need to sample from the conditional of one variable, give
 
 		for i in range(num_samples):
 
-		    # Sample from p(x_0|x_1)
-		    x_0 = conditional_sampler(sampling_index=0, condition_on=x_1, ...)
-		    
-		    # Sample from p(x_1|x_0)
-		    x_1 = conditional_sampler(sampling_index=1, condition_on=x_0, ...)
+			# Sample from p(x_0|x_1)
+			x_0 = conditional_sampler(sampling_index=0, condition_on=x_1, ...)
+			
+			# Sample from p(x_1|x_0)
+			x_1 = conditional_sampler(sampling_index=1, condition_on=x_0, ...)
 	    	
-	    	samples[i+1] = [x_0, x_1]
+			samples[i+1] = [x_0, x_1]
 	    
 	    return samples
-
+```
 Now we need to write functions to sample from 1D conditional distributions. Remember that in Gibbs sampling we assume that although the original distribution is hard to sample from, but the conditional distributions of each variable given rest of the variables is simple to sample from. 
 
 Mutivariate Gaussian has the characteristic that for a multivariate Gaussian, the conditional distributions are also Gaussian (and the marginals too). For the proof, interested readers can refer to Chapter 3 of PRML book by C.Bishop. 
@@ -51,7 +52,8 @@ Because they are so similar, we can use just one function for both of them. We u
 
 {% highlight python %}
  def conditional_sampler(sampling_index, current_x, mean, cov):
-    conditioned_index = 1 - sampling_index # Because we only have 2 variables, x_0 & x_1
+    conditioned_index = 1 - sampling_index 
+    # The above line works because we only have 2 variables, x_0 & x_1
     a = cov[sampling_index, sampling_index]
     b = cov[sampling_index, conditioned_index]
     c = cov[conditioned_index, conditioned_index]
@@ -75,14 +77,12 @@ Now we can sample as many points as we want, starting from an inital point:
 	tmp_points = np.empty([num_samples, 2]) #inbetween points
 
 	for i in range(num_samples):
-
 	    # Sample from p(x_0|x_1)
 	    point = conditional_sampler(0, point, mean, cov)
-    	tmp_points[i] = point
-	
-	    # Sample from p(x_1|x_0)
-	    point = conditional_sampler(1, point, mean, cov)
-    	samples[i+1] = point
+		tmp_points[i] = point
+		# Sample from p(x_1|x_0)
+		point = conditional_sampler(1, point, mean, cov)
+		samples[i+1] = point
     
     return samples, tmp_points
 {% endhighlight %}
@@ -98,3 +98,5 @@ Let's begin sampling! And also we will estimate a gaussian from the sampled poin
 <img src="{{ site.url }}/files/blog/gibbs/gibbs.gif" width="100%">
 
 The complete code for this example along with all the plotting and creating GIFs is available at my repo. For plotting Gaussian contours, I used the code from <a href="https://matplotlib.org/gallery/statistics/confidence_ellipse.html">this matplotlib tutorial</a>.
+
+Now, of course you won't be using Gibbs sampling for sampling from mutivariate Gaussians. So for any general intractable distribution, you need to have conditional samplers for each of the random variable given others. And you will be good to go.
