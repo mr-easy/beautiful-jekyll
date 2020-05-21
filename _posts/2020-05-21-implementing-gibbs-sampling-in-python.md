@@ -11,7 +11,7 @@ Suppose we have a joint distribution $$P$$ on multiple random variables which we
 
 For keeping things simple, we will program Gibbs sampling for simple 2D Gaussian distribution. Albeit its simple to sample from multivariate Gaussian distribution, but we'll assume that it's not and hence we need to use some other method to sample from it, i.e., Gibbs sampling.
 
-Let our original distribution for which we need to sample be $$ P \sim \mathcal{N}(\boldsymbol{\mu}, \Sigma) $$. Where, $$ \boldsymbol{\mu} \in \mathbb{R}^2 $$ is the mean vector and $$ \Sigma \in \mathbb{R}^{2\cross 2} $$ is the symmetric positive semi-definite covariance matrix. And each of the sample will be $$ \mathbf{x} = [x_0, x_1]^T $$.
+Let our original distribution for which we need to sample be $$ P \sim \mathcal{N}(\boldsymbol{\mu}, \Sigma) $$. Where, $$ \boldsymbol{\mu} \in \mathbb{R}^2 $$ is the mean vector and $$ \Sigma \in \mathbb{R}^{2\times 2} $$ is the symmetric positive semi-definite covariance matrix. And each of the sample will be $$ \mathbf{x} = [x_0, x_1]^T $$.
 
 $$ \boldsymbol{\mu} = \begin{bmatrix}\mu_0\\\mu_1\end{bmatrix} \qquad \Sigma = \begin{bmatrix}\Sigma_{00} & \Sigma_{01}\\\Sigma_{10} & \Sigma_{11}\end{bmatrix} $$
 
@@ -42,11 +42,11 @@ Multivariate Gaussian has the characteristic that for a multivariate Gaussian, t
 
 For the 2D case, the conditional distribution of $$x_0$$ given $$x_1$$ is single variable Gaussian:
 
-$$ p(x_0\vert x_1) \sim \mathcal{N}(\mu_0 + \frac{\Sigma_{01}}{\Sigma_{11}}(x_1 - \mu_1), \Sigma_{00} - \frac{\Sigma_{01}^2}{\Sigma_{11}}) $$
+$$ p(x_0\vert x_1) \sim \mathcal{N}\left( \mu_0 + \frac{\Sigma_{01}}{\Sigma_{11}}(x_1 - \mu_1), \Sigma_{00} - \frac{\Sigma_{01}^2}{\Sigma_{11}}\right) $$
 
 And similarly for $$ p(x_1\vert x_0) $$
 
-$$ p(x_1\vert x_0) \sim \mathcal{N}(\mu_1 + \frac{\Sigma_{01}}{\Sigma_{00}}(x_0 - \mu_0), \Sigma_{11} - \frac{\Sigma_{01}^2}{\Sigma_{00}}) $$
+$$ p(x_1\vert x_0) \sim \mathcal{N}\left( \mu_1 + \frac{\Sigma_{01}}{\Sigma_{00}}(x_0 - \mu_0), \Sigma_{11} - \frac{\Sigma_{01}^2}{\Sigma_{00}}\right) $$
 
 Because they are so similar, we can use just one function for both of them. We used NumPy's ```random.randn()``` which gives a sample from standard normal, we transform it by multiplying with standard deviation and shifting it by the mean of out distribution. The following function is the implementation of the above equations and gives us a sample from these distributions.
 
