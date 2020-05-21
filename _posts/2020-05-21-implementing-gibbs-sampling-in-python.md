@@ -36,11 +36,11 @@ def gibbs_sampler(initial_point, num_samples, ...):
 
     return samples
 ```
-Now we need to write functions to sample from 1D conditional distributions. Remember that in Gibbs sampling we assume that although the original distribution is hard to sample from, but the conditional distributions of each variable given rest of the variables is simple to sample from. 
+Now we need to write functions to sample from 1D conditional distributions. Remember, that in Gibbs sampling we assume that although the original distribution is hard to sample from, but the conditional distributions of each variable given rest of the variables is simple to sample from. 
 
-Multivariate Gaussian has the characteristic that for a multivariate Gaussian, the conditional distributions are also Gaussian (and the marginals too). For the proof, interested readers can refer to Chapter 3 of <a href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/">PRML book by C.Bishop</a>. 
+Multivariate Gaussian has the characteristic that the conditional distributions are also Gaussian (and the marginals too). For the proof, interested readers can refer to Chapter 2 of <a href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/">PRML book by C.Bishop</a>. 
 
-For the 2D case, the conditional distribution of $$x_0$$ given $$x_1$$ is single variable Gaussian:
+For the 2D case, the conditional distribution of $$x_0$$ given $$x_1$$ is a Gaussian:
 
 $$ p(x_0\vert x_1) \sim \mathcal{N}\left( \mu_0 + \frac{\Sigma_{01}}{\Sigma_{11}}(x_1 - \mu_1), \Sigma_{00} - \frac{\Sigma_{01}^2}{\Sigma_{11}}\right) $$
 
