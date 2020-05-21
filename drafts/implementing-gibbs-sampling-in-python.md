@@ -7,15 +7,15 @@ categories: post
 tags: [Blog, Probability, Visualization, Python]
 ---
 
-Suppose we have a joint distribution P on multiple random variables which we can't sample from directly. But we require the samples. One way is to use MCMC, and a special and simple example of MCMC is Gibbs sampling. Where we know that sampling from P is hard, but sampling from conditional distribution of one variable at a time conditioned on rest of the variables is simpler. And it's possible because sampling from 1D distributions is simpler in general. 
+Suppose we have a joint distribution $$P$$ on multiple random variables which we can't sample from directly. But we require the samples. One way is to use **MCMC**, and a special and simple example of MCMC is **Gibbs sampling**. Where we know that sampling from $$P$$ is hard, but sampling from conditional distribution of one variable at a time conditioned on rest of the variables is simpler. And it's possible because sampling from 1D distributions is simpler in general. 
 
-For keeping things simple, we will programm Gibbs sampling for simple 2D Gaussian distribution. Albeit its simple to sample from multivariate Gaussian distribution, but we'll assume that it's not and hence we need to use some other method to sample from it, i.e., Gibbs sampling.
+For keeping things simple, we will program Gibbs sampling for simple 2D Gaussian distribution. Albeit its simple to sample from multivariate Gaussian distribution, but we'll assume that it's not and hence we need to use some other method to sample from it, i.e., Gibbs sampling.
 
-Let our original distribution for which we need to sample be P = N(\mu, \Sigma). \mu \in \R^2 be the mean vector and \Sigma \in \R^{2x2} is the symmetric positive semi-definite covariance matrix. And each of the sample will be x = [x_0, x_1]^T
+Let our original distribution for which we need to sample be $$P \sim \mathcal(N)(boldsymbol{\mu}, \Sigma)$$. Where, $$boldsymbol{\mu} \in \R^2$$ is the mean vector and $$\Sigma \in \R^{2x2}$$ is the symmetric positive semi-definite covariance matrix. And each of the sample will be $$\mathbf{x} = \[x_0, x_1\]^T$$.
 
-\mu = [] \Sigma = 
+$$\boldsymbol{\mu} = \begin{bmatrix}\mu_0\\\mu_1\end{bmatrix} \qquad \Sigma = \begin{bmatrix}\Sigma_{00} & \Sigma_{01}\\\Sigma_{10} & \Sigma_{11}\end{bmatrix}$$
 
-For Gibbs sampling, we need to sample from the conditional of one variable, given the values of all other variables. So in our case, we need to sample from p(x_0|x_1) and p(x_1|x_0) to get one sample from our original distribution P. So, our main sampler will contain two simple sampling from these conditional distributions:
+For Gibbs sampling, we need to sample from the conditional of one variable, given the values of all other variables. So in our case, we need to sample from $$p(x_0|x_1)$$ and $$p(x_1|x_0)$$ to get one sample from our original distribution $$P$$. So, our main sampler will contain two simple sampling from these conditional distributions:
 
 \code
 def gibbs_sampler(x):
@@ -30,20 +30,22 @@ Now we need to write functions to sample from 1D conditional distributions. Reme
 Mutivariate Gaussian has the characteristic that for a multivariate Gaussian, the conditional distributions are also Gaussian (and the marginals too). For the proof, interested readers can refer to Chapter 3 of PRML book by C.Bishop. 
 
 For the 2D case, the conditional distribution of x_0 given x_1 is single variable Gaussian:
- p(x_0 | x_1) ~ N(\mu_1, ...)
 
-And similarly for p(x_1 | x_0)
- p(x_1 | x_0)
+$$p(x_0 | x_1) \sim \mathcal(N)(\mu_0 + \frac{\Sigma_{01}}{\Sigma_{11}}(x_1 - \mu_1), \Sigma_{00} - \frac{\Sigma_{01}^2}{\Sigma_{11}})$$
 
-Because they are so similar, we can use just one function for both of them. We used numpy's random.randn() which gives a sample from standard normal, we transform it by multiplying with standard deviation and shifting it by the mean of out distribution. The following function is the implementation of above equations and gives us sample from these distributions.
+And similarly for $$p(x_1 | x_0)$$
+
+$$p(x_1 | x_0) \sim \mathcal(N)(\mu_1 + \frac{\Sigma_{01}}{\Sigma_{00}}(x_0 - \mu_0), \Sigma_{11} - \frac{\Sigma_{01}^2}{\Sigma_{00}})$$
+
+Because they are so similar, we can use just one function for both of them. We used numpy's ```random.randn()``` which gives a sample from standard normal, we transform it by multiplying with standard deviation and shifting it by the mean of out distribution. The following function is the implementation of above equations and gives us sample from these distributions.
 
 {% highlight python %}
 def conditional_sampler(sampling_index, current_x, mean, cov):
-    conditioned_index = 1 - sampling_index   # Because we only have 2 variables, x_0 and x_1
+    conditioned_index = 1 - sampling_index # Because we only have 2 variables, x_0 and x_1
     a = cov[sampling_index, sampling_index]
     b = cov[sampling_index, conditioned_index]
     c = cov[conditioned_index, conditioned_index]
-    
+  
     mu = mean[sampling_index] + (b * (current_x[conditioned_index] - mean[conditioned_index]))/c
     sigma = np.sqrt(a-(b**2)/c)
     new_x = np.copy(current_x)
@@ -60,7 +62,7 @@ for i in range(num_samples):
     samples.append(gibbs_sample(x, mu, sigma))
 
 Let's see it in action. First let's plot our true distribution, which lets say have the following parameters
-\mu =  \Sigma = 
+$$\boldsymbol{\mu} = \begin{bmatrix}0\\1\end{bmatrix} \qquad \Sigma = \begin{bmatrix} & \\ & \end{bmatrix}$$
 
 \plot of true distribution
 
