@@ -40,7 +40,7 @@ Now we need to write functions to sample from 1D conditional distributions. Reme
 
 Multivariate Gaussian has the characteristic that the conditional distributions are also Gaussian (and the marginals too). For the proof, interested readers can refer to Chapter 2 of <a href="https://www.microsoft.com/en-us/research/people/cmbishop/prml-book/">PRML book by C.Bishop</a>. 
 
-For the 2D case, the conditional distribution of $$x_0$$ given $$x_1$$ is a Gaussian:
+For the 2D case, the conditional distribution of $$x_0$$ given $$x_1$$ is a Gaussian with following parameters:
 
 $$ p(x_0\vert x_1) \sim \mathcal{N}\left( \mu_0 + \frac{\Sigma_{01}}{\Sigma_{11}}(x_1 - \mu_1), \Sigma_{00} - \frac{\Sigma_{01}^2}{\Sigma_{11}}\right) $$
 
@@ -48,7 +48,7 @@ And similarly for $$ p(x_1\vert x_0) $$
 
 $$ p(x_1\vert x_0) \sim \mathcal{N}\left( \mu_1 + \frac{\Sigma_{01}}{\Sigma_{00}}(x_0 - \mu_0), \Sigma_{11} - \frac{\Sigma_{01}^2}{\Sigma_{00}}\right) $$
 
-Because they are so similar, we can use just one function for both of them. We used NumPy's ```random.randn()``` which gives a sample from standard normal, we transform it by multiplying with standard deviation and shifting it by the mean of out distribution. The following function is the implementation of the above equations and gives us a sample from these distributions.
+Because they are so similar, we can write just one function for both of them. We used NumPy's ```random.randn()``` which gives a sample from standard Normal distribution, we transform it by multiplying with the required standard deviation and shifting it by the mean of our distribution. The following function is the implementation of the above equations and gives us a sample from these distributions.
 
 {% highlight python %}
  def conditional_sampler(sampling_index, current_x, mean, cov):
