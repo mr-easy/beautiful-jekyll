@@ -17,13 +17,24 @@ $$\boldsymbol{\mu} = \begin{bmatrix}\mu_0\\\mu_1\end{bmatrix} \qquad \Sigma = \b
 
 For Gibbs sampling, we need to sample from the conditional of one variable, given the values of all other variables. So in our case, we need to sample from $$p(x_0|x_1)$$ and $$p(x_1|x_0)$$ to get one sample from our original distribution $$P$$. So, our main sampler will contain two simple sampling from these conditional distributions:
 
-\code
-def gibbs_sampler(x):
-    # Sample from p(x_0|x_1)
-    x[0] = conditional_sampler(sampling_index=0, x)
-    # Sample from p(x_1|x_0)
-    x[1] = conditional_sampler(sampling_index=1, x)
-    return x
+def gibbs_sampler(initial_point, num_samples, ...):
+
+	x_0 = initial_point[0]
+	x_1 = initial_point[1]
+	samples = np.empty([num_samples+1, 2])  #sampled points
+	samples[0] = [x_0, x_1]
+
+	for i in range(num_samples):
+
+	    # Sample from p(x_0|x_1)
+	    x_0 = conditional_sampler(sampling_index=0, condition_on=x_1, ...)
+	    
+	    # Sample from p(x_1|x_0)
+	    x_1 = conditional_sampler(sampling_index=1, condition_on=x_0, ...)
+    	samples[i+1] = [x_0, x_1]
+    
+    return samples
+{% endhighlight %}
 
 Now we need to write functions to sample from 1D conditional distributions. Remember that in Gibbs sampling we assume that although the original distribution is hard to sample from, but the conditional distributions of each variable given rest of the variables is simple to sample from. 
 
@@ -41,12 +52,13 @@ Because they are so similar, we can use just one function for both of them. We u
 
 {% highlight python %}
 def conditional_sampler(sampling_index, current_x, mean, cov):
-    conditioned_index = 1 - sampling_index # Because we only have 2 variables, x_0 and x_1
+    conditioned_index = 1 - sampling_index # Because we only have 2 variables, x_0 & x_1
     a = cov[sampling_index, sampling_index]
     b = cov[sampling_index, conditioned_index]
     c = cov[conditioned_index, conditioned_index]
   
-    mu = mean[sampling_index] + (b * (current_x[conditioned_index] - mean[conditioned_index]))/c
+    mu = mean[sampling_index] + 
+    	 (b * (current_x[conditioned_index] - mean[conditioned_index]))/c
     sigma = np.sqrt(a-(b**2)/c)
     new_x = np.copy(current_x)
     new_x[sampling_index] = np.random.randn()*sigma + mu
@@ -55,18 +67,34 @@ def conditional_sampler(sampling_index, current_x, mean, cov):
 
 Now we can sample as many points as we want, starting from an inital point:
 
-point = [0, 0]   # our initial starting point
-samples = [point] # list of our collected samples
-num_samples = 100
-for i in range(num_samples):
-    samples.append(gibbs_sample(x, mu, sigma))
+{% highlight python %}
+def gibbs_sampler(initial_point, num_samples, mean, cov):
+
+	point = np.array(initial_point)
+	samples = np.empty([num_samples+1, 2])  #sampled points
+	samples[0] = point
+	tmp_points = np.empty([num_samples, 2]) #inbetween points
+
+	for i in range(num_samples):
+
+	    # Sample from p(x_0|x_1)
+	    point = conditional_sampler(0, point, mean, cov)
+    	tmp_points[i] = point
+	
+	    # Sample from p(x_1|x_0)
+	    point = conditional_sampler(1, point, mean, cov)
+    	samples[i+1] = point
+    
+    return samples, tmp_points
+{% endhighlight %}
+
 
 Let's see it in action. First let's plot our true distribution, which lets say have the following parameters
 $$\boldsymbol{\mu} = \begin{bmatrix}0\\1\end{bmatrix} \qquad \Sigma = \begin{bmatrix} & \\ & \end{bmatrix}$$
 
 \plot of true distribution
 
-Let's begin sampling! And also we will estimate a gaussian from the sampled points to see how close we get with more samples.
+Let's begin sampling! And also we will estimate a gaussian from the sampled points to see how close we get to the true distribution with increasing number of samples.
 \plt
 The complete code for this example along with all the plotting and creating GIFs is available at my repo. For plotting Gaussian contours, I used the code from <>
 
