@@ -2,6 +2,7 @@
 layout: post
 title: "KL Divergence between 2 Gaussian Distributions"
 description: KL Divergence between two Gaussian distribution or Normal distribution, Probability.
+image: /files/blog/kl/front.jpg
 date: 2020-04-16
 categories: post
 tags: [Blog, Probability]
