@@ -2,6 +2,7 @@
 layout: post
 title: "Implementing Gibbs Sampling in Python"
 description: Programming Gibbs Sampling sampler in python for 2D Gaussian distribution and visualizing it.
+image: /files/blog/gibbs/front.jpg
 date: 2020-05-21
 categories: post
 tags: [Blog, Probability, Visualization, Python]
@@ -92,7 +93,7 @@ Let's see it in action. First let's plot our true distribution, which lets say h
 
 $$\boldsymbol{\mu} = \begin{bmatrix}0\\0\end{bmatrix} \qquad \Sigma = \begin{bmatrix}10 & 3\\3 & 5\end{bmatrix}$$
 
-<img src="{{ site.url }}/files/blog/gibbs/true.png" width="100%">
+<img src="{{ site.url }}/files/blog/gibbs/true.jpg" width="100%">
 
 Let's begin sampling! And also we will estimate a Gaussian from the sampled points to see how close we get to the true distribution with the increasing number of samples. Total number of sampled points = 500.
 
