@@ -8,7 +8,7 @@ categories: post
 tags: [Blog, Probability, Visualization, Python]
 ---
 
-Suppose we have a joint distribution $$P$$ on multiple random variables which we can't sample from directly. But we require the samples. One way is to use **MCMC**, and a special and simple example of MCMC is **Gibbs sampling**. Where we know that sampling from $$P$$ is hard, but sampling from the conditional distribution of one variable at a time conditioned on rest of the variables is simpler. And it's possible because sampling from 1D distributions is simpler in general. 
+Suppose we have a joint distribution $$P$$ on multiple random variables which we can't sample from directly. But we require the samples anyhow. One way to sample from it is **Gibbs sampling**. Where we know that sampling from $$P$$ is hard, but sampling from the conditional distribution of one variable at a time conditioned on rest of the variables is simpler. And it's possible because sampling from 1D distributions is simpler in general. 
 
 For keeping things simple, we will program Gibbs sampling for simple 2D Gaussian distribution. Albeit its simple to sample from multivariate Gaussian distribution, but we'll assume that it's not and hence we need to use some other method to sample from it, i.e., Gibbs sampling.
 
