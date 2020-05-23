@@ -20,7 +20,7 @@ description: Personal website and blog of Rishabh Gupta, Masters student at Comp
 
 # List of links in the navigation bar
 navbar-links:
-  Home: ""
+  Home: "/"
   Blog: "blog/"
   Projects: "projects/"
   About Me: "aboutme/"
