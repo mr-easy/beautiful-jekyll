@@ -43,7 +43,7 @@ css: "/css/aboutme.css"
   <ul>
 	<li>Computational Methods of Optimization ( <a href="https://drona.csa.iisc.ac.in/~chiru/" target="_blank" rel="noopener noreferrer">Prof. Chiranjib Bhattacharyya</a> )</li>
 	<li>Stochastic Models and Applications ( <a href="http://www.ee.iisc.ac.in/faculty/sastry/" target="_blank" rel="noopener noreferrer">Prof. P.S. Sastry</a> )</li>
-	<li>Data Analytics ( <a href="https://ece.iisc.ac.in/~rajeshs/" target="_blank" rel="noopener noreferrer">Prof. Rajesh Sundaresan</a> / <a href="http://hariharan-ramesh.com/">Prof. Ramesh Hariharan</a> )</li>
+	<li>Data Analytics ( <a href="https://ece.iisc.ac.in/~rajeshs/" target="_blank" rel="noopener noreferrer">Prof. Rajesh Sundaresan</a> / <a href="http://hariharan-ramesh.com/" target="_blank" rel="noopener noreferrer">Prof. Ramesh Hariharan</a> )</li>
 	<li>Bioinformatics ( <a href="http://cds.iisc.ac.in/faculty/dpal/" target="_blank" rel="noopener noreferrer">Prof. Debnath Pal</a> / <a href="http://cds.iisc.ac.in/faculty/sekar/" target="_blank" rel="noopener noreferrer">Prof. K. Sekar</a> )</li>
   </ul>
 </li>
