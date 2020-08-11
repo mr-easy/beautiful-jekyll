@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: 
+subtitle:-
 css: "/css/aboutme.css"
 ---
 <div id="aboutme-section">
@@ -12,7 +12,7 @@ css: "/css/aboutme.css"
 </p> 
 <p class="about-text">
   <span class="fa fa-file-text-o about-icon"></span>
-  Download my CV here (<a href="/files/v5.pdf">pdf</a>).
+  Download my CV here (<a href="/files/v5.1.pdf">pdf</a>).
 </p>
 
 <p class="about-text">
