@@ -71,7 +71,7 @@ css: "/css/aboutme.css"
   <ul>
   <li>Probabilistic Graphical Models Specialization ( <a href="https://www.coursera.org/specializations/probabilistic-graphical-models" target="_blank" rel="noopener noreferrer">Coursera</a> ) [<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/5T955JXBRK3L" target="_blank" rel="noopener noreferrer">Certificate</a>]</li>
   <li>Deep Learning ( <a href="https://www.cse.iitm.ac.in/~miteshk/CS7015.html" target="_blank" rel="noopener noreferrer">Prof. Mitesh Khapra - IITM</a> ) [<a href="https://www.youtube.com/playlist?list=PL3pGy4HtqwD2kwldm81pszxZDJANK3uGV" target="_blank" rel="noopener noreferrer">Videos</a>]</li>
-  <li>Statistic ( <a href="https://www.udacity.com/course/statistics--st095" target="_blank" rel="noopener noreferrer">Udacity</a> )</li>>
+  <li>Statistic ( <a href="https://www.udacity.com/course/statistics--st095" target="_blank" rel="noopener noreferrer">Udacity</a> )</li>
   </ul>
 </li>
 </ul> 
