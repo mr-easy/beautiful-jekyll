@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About me
-subtitle: .
+subtitle: _
 css: "/css/aboutme.css"
 ---
 <div id="aboutme-section">
