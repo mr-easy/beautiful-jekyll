@@ -16,13 +16,18 @@ css: "/css/aboutme.css"
 </p>
 
 <p class="about-text">
+  <span class="fa fa-briefcase about-icon"></span>
+  I joined <a href="https://www.flipkart.com/" target="_blank" rel="noopener noreferrer">Flipkart</a> as a Data Scientist from August 2020.
+</p>
+
+<p class="about-text">
   <span class="fa fa-graduation-cap about-icon"></span>
-  I am an M.Tech student at <a href="https://www.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Science(IISc), Bangalore</a> in <a href="https://www.csa.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Computer Science and Automation Department(CSA)</a>. Working under the guidance of <a href="https://drona.csa.iisc.ac.in/~chiru/" target="_blank" rel="noopener noreferrer">Prof. Chiranjib Bhattacharyya</a> at <a href="https://mllabiisc.github.io/" target="_blank" rel="noopener noreferrer">Machine Learning Lab</a>.
+  I did my M.Tech from <a href="https://www.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Science(IISc), Bangalore</a> in <a href="https://www.csa.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Computer Science and Automation Department(CSA)</a>. Worked under the guidance of <a href="https://drona.csa.iisc.ac.in/~chiru/" target="_blank" rel="noopener noreferrer">Prof. Chiranjib Bhattacharyya</a> at <a href="https://mllabiisc.github.io/" target="_blank" rel="noopener noreferrer">Machine Learning Lab</a>. My thesis was on Overlapping Community Detection and Network Analysis.
 </p>
 
 <p class="about-text">
   <span class="fa fa-code about-icon"></span>
-  I am interested in Machine Learning and AI. My journey has just begun.   
+  I am interested in Machine Learning and AI. My journey has just begun. I am exploring different things. I am most interested in probabilistic graphical models.  
 </p>
 
 <p class="about-text">
@@ -64,8 +69,9 @@ css: "/css/aboutme.css"
 </li>
 <li>Others:
   <ul>
-  <li>Probabilistic Graphical Models Specialization (<a href="https://www.coursera.org/specializations/probabilistic-graphical-models" target="_blank" rel="noopener noreferrer">Coursera</a>) [<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/5T955JXBRK3L" target="_blank" rel="noopener noreferrer">Certificate</a>]</li>
+  <li>Probabilistic Graphical Models Specialization ( <a href="https://www.coursera.org/specializations/probabilistic-graphical-models" target="_blank" rel="noopener noreferrer">Coursera</a> ) [<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/5T955JXBRK3L" target="_blank" rel="noopener noreferrer">Certificate</a>]</li>
   <li>Deep Learning ( <a href="https://www.cse.iitm.ac.in/~miteshk/CS7015.html" target="_blank" rel="noopener noreferrer">Prof. Mitesh Khapra - IITM</a> ) [<a href="https://www.youtube.com/playlist?list=PL3pGy4HtqwD2kwldm81pszxZDJANK3uGV" target="_blank" rel="noopener noreferrer">Videos</a>]</li>
+  <li>Statistic ( <a href="https://www.udacity.com/course/statistics--st095" target="_blank" rel="noopener noreferrer">Udacity</a> )</li>>
   </ul>
 </li>
 </ul> 
