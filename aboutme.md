@@ -27,7 +27,7 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
   <span class="fa fa-code about-icon"></span>
-  I am interested in Machine Learning and AI. My journey has just begun. I am exploring different things. I am most interested in probabilistic graphical models.  
+  I am interested in Machine Learning and AI. My journey has just begun. I am exploring different things. I am most interested in Probabilistic Graphical Models, Computer Vision and Computer Graphics.  
 </p>
 
 <p class="about-text">
@@ -64,7 +64,7 @@ css: "/css/aboutme.css"
 	<li>Design and Analysis of Algorithms ( <a href="https://www.csa.iisc.ac.in/~barman/" target="_blank" rel="noopener noreferrer">Prof. Siddharth Barman</a> )</li>
 	<li>Linear Algebra and Probability ( <a href="https://www.csa.iisc.ac.in/~mnm/" target="_blank" rel="noopener noreferrer">Prof. M. Narasimha Murty</a> / <a href="https://www.csa.iisc.ac.in/~shalabh/" target="_blank" rel="noopener noreferrer">Prof. Shalabh Bhatnagar</a> )</li>
 	<li>Graphics and Visualization ( <a href="https://www.csa.iisc.ac.in/~vijayn/" target="_blank" rel="noopener noreferrer">Prof. Vijay Natarajan</a> )</li>
-	<li>Theory and Practice of Computer System Security ( <a href="https://www.csa.iisc.ac.in/~vg/" target="_blank" rel="noopener noreferrer">Prof. Vinod Ganapathy</a> )</li>
+	<li>Theory and Practice of Computer System Security (<a href="https://www.csa.iisc.ac.in/~vg/" target="_blank" rel="noopener noreferrer">Prof. Vinod Ganapathy</a>)</li>
   </ul>
 </li>
 <li>Others:
