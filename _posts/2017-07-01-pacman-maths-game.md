@@ -3,9 +3,8 @@ title: "Pacman Maths Game"
 start: 2017-06-01
 categories: project
 tags: [GameDev, JS]
-links:
-	- code: https://github.com/ekShikha-GamificationFramework/Pac-Man-Maths-Game
-	- demo: https://ekshikha-gamificationframework.github.io/Pac-Man-Maths-Game/
+code: https://github.com/ekShikha-GamificationFramework/Pac-Man-Maths-Game
+demo: https://ekshikha-gamificationframework.github.io/Pac-Man-Maths-Game/
 image: /img/project-imgs/pacman.jpg
 ---
 
