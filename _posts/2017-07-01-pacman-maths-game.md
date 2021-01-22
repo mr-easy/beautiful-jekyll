@@ -5,7 +5,6 @@ categories: project
 tags: [GameDev, JS]
 code: https://github.com/ekShikha-GamificationFramework/Pac-Man-Maths-Game
 demo: https://ekshikha-gamificationframework.github.io/Pac-Man-Maths-Game/
-links: [https://github.com/ekShikha-GamificationFramework/Pac-Man-Maths-Game, https://ekshikha-gamificationframework.github.io/Pac-Man-Maths-Game/]
 image: /img/project-imgs/pacman.jpg
 ---
 
