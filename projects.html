@@ -50,6 +50,13 @@ use-site-title: true
 
 	{% endif %}
     </div>
+    {% if project.links.size > 0 %}
+    <div">
+      {% for link in project.links %}
+      <a href="">[{{- link -}}]</a>
+      {% endfor %}
+    </div>
+    {% endif %}
 
    {% if project.tags.size > 0 %}
     <div class="blog-tags">
