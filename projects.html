@@ -37,18 +37,16 @@ use-site-title: true
       <div class="post-entry">
         {{ project.content }}
       </div>
-    </div>
-    <div>
 	{% if project.demo %}
         <!-- <a href="{{ project.demo }}" target="_blank" rel="noopener noreferrer" class="fa fa-external-link about-icon fa-3x" title="Demo of {{ project.title }}" style="margin:20px"></a> -->
-        <a href="{{ project.demo }}" target="_blank" rel="noopener noreferrer" title="Demo of {{ project.title }}">[demo]</a>
+        <a href="{{ project.demo }}" style="color:blue;" target="_blank" rel="noopener noreferrer" title="Demo of {{ project.title }}">[ demo ]  </a>
     {% endif %}
 	{% if project.code %} 
         <!-- <a href="{{ project.code }}" target="_blank" rel="noopener noreferrer" class="fa fa-github about-icon fa-3x" title="Code of {{ project.title }}"></a>  -->
-        <a href="{{ project.code }}" target="_blank" rel="noopener noreferrer" title="Code of {{ project.title }}">[code]</a> 
+        <a href="{{ project.code }}" style="color:blue;" target="_blank" rel="noopener noreferrer" title="Code of {{ project.title }}">[ code ]</a> 
 	{% endif %}
-    <!-- </div>
-    {% if project.links.size > 0 %}
+    </div>
+    <!-- {% if project.links.size > 0 %}
     <div">
 		{% for link in project.links %}
 			<a href="">[{{- link -}}]</a>
