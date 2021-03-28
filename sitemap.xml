@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+
+<url>
+  <loc>https://mr-easy.github.io/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/blog/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/projects/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/aboutme/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/contact/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2020-05-21-implementing-gibbs-sampling-in-python/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/tags/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2020-04-16-kl-divergence-between-2-gaussian-distributions/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2019-12-21-burrows-wheeler-alignment-part-2/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2019-12-19-burrows-wheeler-alignment-part-1/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2019-12-12-burrows-wheeler-transform/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2018-08-19-programming-gale-shapley-algorithm-in-cpp/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2017-06-26-creating-spritesheet-animation-in-html5-canvas-using-javascript/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/files/v5.2.pdf</loc>
+  <lastmod>2021-01-22T11:51:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2020-06-01-rbm/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2017-02-01-space-drift/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2019-11-01-Badminton-stroke-classification/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2020-03-01-charLSTM/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2017-07-01-space-rangers/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2017-07-01-pacman-maths-game/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2018-01-01-feature-selection-using-genetic-algorithm/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2018-12-01-1D-Landscape-Profile/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2019-05-02-Node-embeddings/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://mr-easy.github.io/2019-05-01-Topological-Data-Analysis-on-Dynamic-graphs/</loc>
+  <lastmod>2021-01-22T11:52:41+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

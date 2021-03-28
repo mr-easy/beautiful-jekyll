@@ -17,7 +17,7 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
   <span class="fa fa-briefcase about-icon"></span>
-  I joined <a href="https://www.flipkart.com/" target="_blank" rel="noopener noreferrer">Flipkart</a> as a Data Scientist from August 2020.
+  I joined <a href="https://www.flipkart.com/" target="_blank" rel="noopener noreferrer">Flipkart</a> as a Data Scientist on August 2020. Currently working on NLP and Document AI.
 </p>
 
 <p class="about-text">
@@ -27,7 +27,7 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
   <span class="fa fa-code about-icon"></span>
-  I am interested in Machine Learning and AI. My journey has just begun. I am exploring different things. I am most interested in Probabilistic Graphical Models, Computer Vision and Computer Graphics.  
+  I am interested in Machine Learning and AI. I am exploring different things. I am interested in Probabilistic Graphical Models, Computer Vision and Computer Graphics.
 </p>
 
 <p class="about-text">
@@ -95,10 +95,16 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
 
 <p class="about-text">
   <span class="fa fa-heart about-icon"></span>
-  I love to watch Animated movies and to create <b>animations</b>. Mostly I prefer doing it the traditional way, i.e by drawing each frame. <a href="https://www.pencil2d.org/" target="_blank" rel="noopener noreferrer">Pencil2D</a> is my favourite tool for it. It's nice and simple, open-source, good for short length animations. I have a Wacom One (small) graphics pen tablet. Some of <a href="https://discuss.pencil2d.org/t/my-animation-work-progress/2626/8" target="_blank" rel="noopener noreferrer">my short animations</a>.
+  I love to watch Animated movies and to create <b>animations</b>. Mostly I prefer doing it the traditional way, i.e by drawing each frame. <a href="https://www.pencil2d.org/" target="_blank" rel="noopener noreferrer">Pencil2D</a> is my favourite tool for it. It's nice and simple, open-source, good for short length animations. I have a Wacom One (small) graphics pen tablet. Some of <a href="https://discuss.pencil2d.org/t/my-animation-work-progress/2626/8" target="_blank" rel="noopener noreferrer">my short animations</a>. Also check out few animations on my <a href="https://www.youtube.com/channel/UCLmGCOcXW2KlP_Xg3q4GTzA" target="_blank" rel="noopener noreferrer">YouTube channel</a>.
 
 <div style="position:relative;height:0;padding-bottom:56.21%"><iframe src="https://www.youtube.com/embed/wRSGwh3zOKk?ecver=2" style="position:absolute;width:80%;height:80%;left:10%" width="641" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+<div style="position:relative;height:0;padding-bottom:56.21%"><iframe src="https://www.youtube.com/embed/VwytgnYPbzk" style="position:absolute;width:80%;height:80%;left:10%" width="641" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
 </p>
+
+<!-- <p class="about-text">
+  <span class="fa fa-heart about-icon"></span>
+  I also like to explore different things like psychology, philosophy, gardening, bonsai, algorithmic trading, statistics, entrepreneurship, ...
+</p> -->
 
 <p class="about-text">
   <center><b> &#9734; &#9734; &#9734; FUN STUFF &#9734; &#9734; &#9734; </b>
