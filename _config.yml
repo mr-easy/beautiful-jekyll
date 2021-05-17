@@ -1,10 +1,10 @@
 # --- General options --- #
 
 # Name of website
-title: Mr. Easy
+title: Rishabh Gupta (Mr. Easy)
 
 # Short description of your site
-description: Personal website and blog of Rishabh Gupta, Masters student at Computer Science and Automation at Indian Institute of Science (IISc) Bangalore. Computer Science blog of random stuff. Projects of Rishabh Gupta. About.
+description: Rishabh Gupta, Data Scientist at Flipkart, Masters student (MTech) at Computer Science and Automation (CSA) at Indian Institute of Science (IISc) Bangalore. Computer Science blog of random stuff. Projects of Rishabh Gupta. About Rishabh Gupta, mr easy. Machine Learning, Artificial Intelligence, Natural Language Proecssing, Computer Graphics, Animation.
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl

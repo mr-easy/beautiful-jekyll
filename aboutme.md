@@ -103,7 +103,7 @@ I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</
 
 <!-- <p class="about-text">
   <span class="fa fa-heart about-icon"></span>
-  I also like to explore different things like psychology, philosophy, gardening, bonsai, algorithmic trading, statistics, entrepreneurship, ...
+  I also like to explore different things like psychology, philosophy, gardening, bonsai, algorithmic trading, statistics, game design and game programming, arduino programming, entrepreneurship, ...
 </p> -->
 
 <p class="about-text">
