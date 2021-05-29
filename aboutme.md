@@ -22,7 +22,7 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
   <span class="fa fa-graduation-cap about-icon"></span>
-  I did my M.Tech from <a href="https://www.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Science(IISc), Bangalore</a> in <a href="https://www.csa.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Computer Science and Automation Department(CSA)</a>. Worked under the guidance of <a href="https://drona.csa.iisc.ac.in/~chiru/" target="_blank" rel="noopener noreferrer">Prof. Chiranjib Bhattacharyya</a> at <a href="https://mllabiisc.github.io/" target="_blank" rel="noopener noreferrer">Machine Learning Lab</a>. My thesis was on Overlapping Community Detection and Network Analysis.
+  I did my M.Tech from <a href="https://www.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Science(IISc), Bangalore</a> in <a href="https://www.csa.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Computer Science and Automation Department(CSA)</a>. Worked under the guidance of <a href="https://www.csa.iisc.ac.in/people/chiranjib-bhattacharyya/" target="_blank" rel="noopener noreferrer">Prof. Chiranjib Bhattacharyya</a> at <a href="https://mllab.csa.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Machine Learning Lab</a>. My thesis was on Overlapping Community Detection and Network Analysis.
 </p>
 
 <p class="about-text">
