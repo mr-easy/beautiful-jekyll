@@ -80,7 +80,7 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
   <span class="fa fa-star about-icon"></span>
-I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</b> in GATE CSE 2018 (Score: 1000).   
+I got admission into IISc through my GATE score. Secured <b>All India Rank - 2</b> in GATE CSE 2018 (Score: 1000). Check out my <a href="https://gateoverflow.in/blog/3813/my-success-story" target="_blank" rel="noopener noreferrer">blog post on GateOverflow</a>.   
 </p>
 
 <p class="about-text">
