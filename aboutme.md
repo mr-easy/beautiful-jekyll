@@ -12,12 +12,12 @@ css: "/css/aboutme.css"
 </p> 
 <p class="about-text">
   <span class="fa fa-file-text-o about-icon"></span>
-  Download my CV here (<a href="/files/v5.2.pdf">pdf</a>).
+  Download my CV here (<a href="/files/v5.3.pdf">pdf</a>).
 </p>
 
 <p class="about-text">
   <span class="fa fa-briefcase about-icon"></span>
-  I joined <a href="https://www.flipkart.com/" target="_blank" rel="noopener noreferrer">Flipkart</a> as a Data Scientist on August 2020. Currently working on NLP and Document AI.
+  I joined <a href="https://www.flipkart.com/" target="_blank" rel="noopener noreferrer">Flipkart</a> as a Data Scientist on August 2020. Currently working on Document AI. Also worked on NLP and anamoly detection.
 </p>
 
 <p class="about-text">
