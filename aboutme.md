@@ -16,18 +16,18 @@ css: "/css/aboutme.css"
 </p>
 
 <p class="about-text">
+  <span class="fa fa-code about-icon"></span>
+  I love to learn new things in computer science. My main interests are Machine Learning, Computer Vision, Graphics and Quants (finance).
+</p>
+
+<p class="about-text">
   <span class="fa fa-briefcase about-icon"></span>
-  I joined <a href="https://www.flipkart.com/" target="_blank" rel="noopener noreferrer">Flipkart</a> as a Data Scientist on August 2020. Currently working on Document AI. Also worked on NLP and anamoly detection.
+  I joined <a href="https://www.flipkart.com/" target="_blank" rel="noopener noreferrer">Flipkart</a> as a Data Scientist on August 2020.  Working on different data science projects in Document-AI, NLP and anamoly detection domain.
 </p>
 
 <p class="about-text">
   <span class="fa fa-graduation-cap about-icon"></span>
   I did my M.Tech from <a href="https://www.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Indian Institute of Science(IISc), Bangalore</a> in <a href="https://www.csa.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Computer Science and Automation Department(CSA)</a>. Worked under the guidance of <a href="https://www.csa.iisc.ac.in/people/chiranjib-bhattacharyya/" target="_blank" rel="noopener noreferrer">Prof. Chiranjib Bhattacharyya</a> at <a href="https://mllab.csa.iisc.ac.in/" target="_blank" rel="noopener noreferrer">Machine Learning Lab</a>. My thesis was on Overlapping Community Detection and Network Analysis.
-</p>
-
-<p class="about-text">
-  <span class="fa fa-code about-icon"></span>
-  I am interested in Machine Learning and AI. I am exploring different things. I am interested in Probabilistic Graphical Models, Computer Vision and Computer Graphics.
 </p>
 
 <p class="about-text">
