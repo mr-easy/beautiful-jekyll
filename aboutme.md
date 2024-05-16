@@ -12,17 +12,17 @@ css: "/css/aboutme.css"
 </p> 
 <p class="about-text">
   <span class="fa fa-file-text-o about-icon"></span>
-  Download my CV here (<a href="/files/v5.3.pdf">pdf</a>).
+  Download my CV here (<a href="/files/v5.4.pdf">pdf</a>).
 </p>
 
 <p class="about-text">
   <span class="fa fa-code about-icon"></span>
-  I love to learn new things in computer science. My main interests are Machine Learning, Computer Vision, Graphics and Quants (finance).
+  I love to learn new things in computer science. My main interests are Machine Learning, Graphics and Quants (finance).
 </p>
 
 <p class="about-text">
   <span class="fa fa-briefcase about-icon"></span>
-  I joined <a href="https://www.flipkart.com/" target="_blank" rel="noopener noreferrer">Flipkart</a> as a Data Scientist on August 2020.  Working on different data science projects in Document-AI, NLP and anamoly detection domain.
+  I worked at <a href="https://www.flipkart.com/" target="_blank" rel="noopener noreferrer">Flipkart</a> as a Data Scientist from August 2020 to December 2022. Working on different data science projects in Document-AI, NLP and anamoly detection domain.
 </p>
 
 <p class="about-text">
