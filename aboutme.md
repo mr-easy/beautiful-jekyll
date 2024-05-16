@@ -22,7 +22,7 @@ css: "/css/aboutme.css"
 
 <p class="about-text">
   <span class="fa fa-briefcase about-icon"></span>
-  I worked at <a href="https://www.flipkart.com/" target="_blank" rel="noopener noreferrer">Flipkart</a> as a Data Scientist from August 2020 to December 2022. Working on different data science projects in Document-AI, NLP and anamoly detection domain.
+  I worked at <a href="https://www.flipkart.com/" target="_blank" rel="noopener noreferrer">Flipkart</a> as a Data Scientist from August 2020 to December 2022, where I worked on different data science projects in Document-AI, NLP and anamoly detection domain.
 </p>
 
 <p class="about-text">
